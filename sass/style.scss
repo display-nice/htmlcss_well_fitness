@@ -3,6 +3,8 @@ $lgray: #909CB5;
 $black-rock: #2A2C38;
 $red: #F53B49;
 $transparent-line-color: rgba(133, 143, 164, 0.15);
+$fs-header: 14px;
+$lh-header: 140%;
 
 @mixin small-vertical-line {    
     width: 1px;
@@ -17,7 +19,7 @@ $transparent-line-color: rgba(133, 143, 164, 0.15);
 body {
     margin: 0;
     padding: 0;
-    font-family: "Inter", serif;
+    font-family: "Inter", sans-serif;
     font-display: swap;
     max-width: 1920px;    
 }
@@ -26,7 +28,7 @@ header {
     background-color: $dgray;
     
     .header-border-bottom {
-        display: flex;
+        display: flex;        
         border-bottom: 1px solid $transparent-line-color;
     }
     .header-menu-1 {
@@ -38,10 +40,10 @@ header {
         justify-content: space-between;        
         &-wrapper-1 {
             width: 44.5%;
+            max-width: 392px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 392px;
             .city-change {       
                 width: 68px;
                 display: flex;
@@ -68,7 +70,8 @@ header {
             color: $lgray;
             font-size: 14px;
             line-height: 140%;            
-            .header-partners {                
+            .header-partners {
+                padding: 0 10px;                
                 height: 37px;
                 background-color: #384255;
                 appearance: 0;
@@ -133,35 +136,104 @@ header {
         }
     }
     .header-menu-2 {
+        // border: 2px dotted red;
         margin: 0 auto;
-        width: 1410px;
+        max-width: 1410px;
         height: 81px;
         display: flex;
         justify-content: space-between;
         .header-menu-2-wrapper-1 {
+            width: 70%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            nav {
-                ul {
-                    // display: flex;
-                    list-style: none;
-                    padding: 0;                             
-                    li {
-                        display: inline-block;
-                        
-                        a {
-    
-                        }
-                    }
+            .header-catalogue-button {
+                border: 0;
+                border-radius: 4px;
+                width: 127px;
+                height: 49px;                
+                background-color: $red;
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
+                span {
+                    margin-left: 10px;
+                    color: white;
+                    font-family: Inter;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-top: 3px;
+                }
+            }
+            .search {
+                background-color: $dgray;
+                border: 0;
+                margin-top: 2px;                
+            }
+            .small-vertical-line {
+                @include small-vertical-line;
+                height: 40px;
+            }        
+            a {
+                text-decoration: none;
+                font-family: Inter;
+                color: white;
+                font-size: $fs-header;
+                line-height: $lh-header;
             }
         }
         .header-menu-2-wrapper-2 {
+            width: 30%;
             display: flex;
-            justify-content: space-between;
+            justify-content: end;
+            .right-submenu {
+                min-width: 155px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+    .header-menu-3 {
+        background-color: $black-rock;
+        text-align: left;
+        .header-filters {
+            max-width: 1410px;
+            height: 44px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: start;
             align-items: center;
-            min-width: 155px;
+            &-wrapper {
+                width: 270px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .filter {                    
+                    display: flex;
+                    justify-content: start;
+                    span {
+                        color: white;                
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 17px;
+                        letter-spacing: 0em; 
+                    }                               
+                    img {
+                        margin-left: 10px;
+                        margin-top: 1px;
+                    }
+                }
+                .small-vertical-line {
+                    @include small-vertical-line;
+                }
+            }
+            
         }
         
     }
