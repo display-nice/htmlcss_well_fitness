@@ -16,10 +16,10 @@ $lh-header: 140%;
   margin: 0 6px;
 }
 @mixin common-red-button {
-    box-sizing: border-box;
+  box-sizing: border-box;
   appearance: none;
   border: 1px solid $red;
-  background-color: transparent;  
+  background-color: transparent;
   border-radius: 4px;
   height: 42px;
   padding-left: 20px;
@@ -29,17 +29,46 @@ $lh-header: 140%;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 17px;  
+  line-height: 17px;
+  &:hover {
+    background-color: $red;
+    color: white;
+  }
 }
-@mixin white-bg-arrow-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
+@mixin white-bg-round-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+@mixin arrow {
+  span,
+  span::before,
+  span::after {
+    display: block;
+    border-radius: 5px;
+    height: 3px;
+  }
+  span {
+    width: 16px;
+    background-color: $red;
+  }
+  span::before {
+    content: "";
+    width: 55%;
+    transform: translate(0px, 3px) rotate(45deg);
+    background-color: inherit;
+  }
+  span::after {
+    content: "";
+    width: 55%;
+    transform: translate(0px, -6.1px) rotate(-45deg);
+    background-color: inherit;
+  }
 }
 
 .frame {
@@ -55,7 +84,6 @@ body {
   padding: 0;
   font-family: "Inter", sans-serif;
   font-display: swap;
-  
 }
 // border-bottom: 2px dotted red;
 
@@ -193,6 +221,12 @@ header {
             width: 127px;
             height: 49px;
             background-color: $red;
+            &:hover {
+              background-color: #e32a38;
+            }
+            &:active {
+              background-color: #e32a38;
+            }
             div {
               display: flex;
               justify-content: center;
@@ -285,9 +319,9 @@ header {
   }
 }
 
-// ------------------------------------------------------------
-// ---------------------------BANNER 1---------------------------
-// ------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// ---------------------------BANNER 1-------------------------------------------
+// ------------------------------------------------------------------------------
 main {
   .banner-1 {
     max-width: 1800px;
@@ -304,8 +338,8 @@ main {
         display: flex;
         justify-content: space-between;
         &-descr {
-            max-width: 36%;
-            margin-top: 83px;
+          max-width: 36%;
+          margin-top: 83px;
           p:first-child {
             padding: 0;
             margin-top: 0;
@@ -341,34 +375,99 @@ main {
             text-align: left;
           }
           button {
-              @include common-red-button;
+            @include common-red-button;
+            position: absolute;
+            z-index: 1;
           }
         }
-        &-red-triangle {                       
-            position: absolute;
-            max-width: 1080px;
-            scale: 1.1;            
-            top: 403.2px;
-            opacity: 0.75;
-            filter: saturate(1.6) contrast(1.5);
+        &-red-triangle {
+          position: absolute;
+          max-width: 1080px;
+          scale: 1.1;
+          top: 403.2px;
+          opacity: 0.75;
+          filter: saturate(1.6) contrast(1.5);
         }
         &-img-buttons {
-            max-width: 54%;
+          max-width: 54%;
+          display: flex;
+          .banner-1-arrow-buttons {
+            margin-bottom: 30px;
             display: flex;
-            .banner-1-arrow-buttons {
-                margin-bottom: 30px;
-                display: flex;
-                align-items: end;
-                .to-left-arrow-button {
-                    @include white-bg-arrow-button();
+            align-items: end;
+            .to-left-arrow-button {
+              @include white-bg-round-button();
+              @include arrow();
+              &:hover {
+                background-color: $red;
+                span {
+                  background-color: white;
                 }
-                .to-right-arrow-button {
-                    @include white-bg-arrow-button();
-                    margin-left: 10px;
-                }
+              }
             }
+            .to-right-arrow-button {
+              @include white-bg-round-button();
+              @include arrow();
+              span {
+                transform: rotate(180deg);
+              }
+              &:hover {
+                background-color: $red;
+                span {
+                  background-color: white;
+                }
+              }
+              margin-left: 10px;
+            }
+          }
         }
       }
     }
+  }
+}
+
+// ------------------------------------------------------------------------------
+// ---------------------------Тренажёры для дома---------------------------------
+// ------------------------------------------------------------------------------
+
+.home-equip {
+  margin: 0 15px;
+  &-cards {
+    max-width: 1410px;
+      width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;    
+    &-wrapper1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      > img {
+        width: 23.5%;
+        height: auto;
+      }      
+      div {
+        width: 23.5%;
+        height: auto;
+        max-height: 430px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    // &-wrapper2 {      
+    //   max-width: 1410px;
+    //   width: 100%;
+    //   display: flex;      
+    //   justify-content: space-between;  
+    //   img {        
+    //     width: 23.5%;
+    //     height: auto;
+    //   }    
+    // }    
   }
 }
