@@ -617,24 +617,10 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
   margin: 0 15px;
 }
 
-.home-equip-cards {
-  max-width: 1410px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-}
-
 .home-equip-cards-wrapper1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -661,5 +647,122 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
 .home-equip-cards-wrapper1 div img {
   width: 100%;
   height: auto;
+}
+
+.home-equip-cards-wrapper2 {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-equip-cards-wrapper2 img {
+  width: 23.5%;
+  height: auto;
+}
+
+.home-equip button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #f53b49;
+  background-color: transparent;
+  border-radius: 4px;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f53b49;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 30px 0;
+}
+
+.home-equip button:hover {
+  background-color: #f53b49;
+  color: white;
+}
+
+.fitclub-equip {
+  margin: 0 15px;
+}
+
+.fitclub-equip-cards-wrapper1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fitclub-equip-cards-wrapper1 img:nth-of-type(1) {
+  width: 49%;
+  height: auto;
+}
+
+.fitclub-equip-cards-wrapper1 img:nth-of-type(2), .fitclub-equip-cards-wrapper1 img:nth-of-type(3) {
+  width: 23.5%;
+  height: auto;
+}
+
+.fitclub-equip-cards-wrapper2 {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fitclub-equip-cards-wrapper2 img {
+  width: 23.5%;
+  height: auto;
+}
+
+.fitclub-equip button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #f53b49;
+  background-color: transparent;
+  border-radius: 4px;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f53b49;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 30px 0;
+}
+
+.fitclub-equip button:hover {
+  background-color: #f53b49;
+  color: white;
+}
+
+@media (max-width: 1409px) {
+  body {
+    background-color: #f53b49;
+  }
+}
+
+@media (max-width: 959px) {
+  body {
+    background-color: goldenrod;
+  }
 }
 /*# sourceMappingURL=style.css.map */
