@@ -2,6 +2,9 @@ $dgray: #1a1a25;
 $lgray: #909cb5;
 $black-rock: #2a2c38;
 $red: #f53b49;
+$lime-green: #2FC509;
+$blue: #4B7EE8;
+
 
 $fs-header: 14px;
 $lh-header: 140%;
@@ -511,6 +514,88 @@ main {
     margin: 30px 0;
   }
 }
+// ------------------------------------------------------------------------------
+// ---------------------------Акции и спецпредложения----------------------------
+// ------------------------------------------------------------------------------
+.promo {
+  margin: 0 15px;
+  &-menu {
+    margin-top: 124px;
+    vertical-align: middle;
+    h2 {
+      margin: 0;
+      display: inline-block;
+      margin-right: 30px;
+    }
+    h2:nth-of-type(2), h2:nth-of-type(3) {
+      color: #828282;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }  
+}
+.promo-cards {
+  margin-top: 30px;
+  &-card {
+    position: relative;
+    max-width: 300px;
+  }
+}
+.promo-cards-card-icons {
+  max-width: 280px;
+  position: absolute;
+  z-index: 1;
+  background-color: violet;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  &-left {  
+    max-width: 200px;
+    display: flex;    
+    .discount_round {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      background-color: $red;
+      border-radius: 50%;
+    }
+    .thumb-up {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      margin-left: -10px;
+      background-color: $lime-green;
+      border-radius: 50%;
+    }
+    .new {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      margin-left: -10px;
+      background-color: $blue;
+      border-radius: 50%;
+    }  
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    img {
+      margin-left: 8px;
+    }
+  }
+}
+
+// ------------------------------------------------------------------------------
+// ---------------------------Медиазапросы---------------------------------------
+// ------------------------------------------------------------------------------
+
 @media (max-width: 1409px) {
   body {
     background-color: $red;

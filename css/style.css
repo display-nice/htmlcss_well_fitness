@@ -754,6 +754,121 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
   color: white;
 }
 
+.promo {
+  margin: 0 15px;
+}
+
+.promo-menu {
+  margin-top: 124px;
+  vertical-align: middle;
+}
+
+.promo-menu h2 {
+  margin: 0;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.promo-menu h2:nth-of-type(2), .promo-menu h2:nth-of-type(3) {
+  color: #828282;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.promo-cards {
+  margin-top: 30px;
+}
+
+.promo-cards-card {
+  position: relative;
+  max-width: 300px;
+}
+
+.promo-cards-card-icons {
+  max-width: 280px;
+  position: absolute;
+  z-index: 1;
+  background-color: violet;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 10px;
+}
+
+.promo-cards-card-icons-left {
+  max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promo-cards-card-icons-left .discount_round {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #f53b49;
+  border-radius: 50%;
+}
+
+.promo-cards-card-icons-left .thumb-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
+  margin-left: -10px;
+  background-color: #2FC509;
+  border-radius: 50%;
+}
+
+.promo-cards-card-icons-left .new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
+  margin-left: -10px;
+  background-color: #4B7EE8;
+  border-radius: 50%;
+}
+
+.promo-cards-card-icons-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promo-cards-card-icons-right img {
+  margin-left: 8px;
+}
+
 @media (max-width: 1409px) {
   body {
     background-color: #f53b49;
