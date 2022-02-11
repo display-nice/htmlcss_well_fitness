@@ -1,11 +1,11 @@
 $dgray: #1a1a25;
 $lgray: #909cb5;
+$txt: #384255;
 $black-rock: #2a2c38;
 $red: #f53b49;
+$hover-red: #E32A38;
 $lime-green: #2FC509;
 $blue: #4B7EE8;
-
-
 $fs-header: 14px;
 $lh-header: 140%;
 
@@ -73,6 +73,10 @@ $lh-header: 140%;
     background-color: inherit;
   }
 }
+@mixin h2-desktop {
+
+}
+
 
 .frame {
   max-width: 1440px;
@@ -87,6 +91,7 @@ body {
   padding: 0;
   font-family: "Inter", sans-serif;
   font-display: swap;
+  background-color: #F7F7F7;
 }
 // border-bottom: 2px dotted red;
 
@@ -536,65 +541,325 @@ main {
   }  
 }
 .promo-cards {
+  margin: 0 15px;
   margin-top: 30px;
+  display: flex;
+  justify-content: start;
   &-card {
+    background-color: #fff;    
     position: relative;
     max-width: 300px;
+    max-height: 505px;
+    min-width: 220px;
+    min-height: 387px;
+    border-radius: 6px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    &:hover {
+      transition: 0.5s;
+      filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.12)) drop-shadow(0px 4px 30px rgba(19, 15, 38, 0.1));
+    }
+    > img {
+      border-radius: 6px 6px 0 0;
+      width: 100%;
+      max-width: 300px;
+      max-height: 300px;
+      min-width: 220px;
+      min-height: 220px;
+      height: auto;      
+    }
+    &:hover {
+      .thumb-up, .new {
+        transition: 0.5s;
+        margin-left: 10px;
+      }
+    }
   }
 }
-.promo-cards-card-icons {
-  max-width: 280px;
+.promo-cards-card-icons-left {  
   position: absolute;
   z-index: 1;
-  background-color: violet;
+  // background-color: violet;
   display: flex;
   justify-content: space-between;
-  margin: 0 10px;
-  &-left {  
-    max-width: 200px;
-    display: flex;    
-    .discount_round {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 36px;
-      height: 36px;
-      background-color: $red;
-      border-radius: 50%;
-    }
-    .thumb-up {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 36px;
-      height: 36px;
-      margin-left: -10px;
-      background-color: $lime-green;
-      border-radius: 50%;
-    }
-    .new {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 36px;
-      height: 36px;
-      margin-left: -10px;
-      background-color: $blue;
-      border-radius: 50%;
-    }  
+  top: 10px;
+  left: 10px;  
+  max-width: 200px;
+  display: flex;    
+  .discount_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: $red;
+    border-radius: 50%;
   }
-  &-right {
+  .thumb-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    margin-left: -10px;
+    background-color: $blue; 
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+  .new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    margin-left: -10px;
+    background-color: $lime-green;
+    border-radius: 50%;
+    transition: 0.5s;
+  }  
+}
+
+.promo-cards-card-icons-right {
+  position: absolute;
+  z-index: 1;
+  top: 19px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  // background-color: violet;
+  img:nth-of-type(1) {    
+    width: 80%;
+    height: auto;
+  }
+  img:nth-of-type(2) {
+    margin-left: 8px;
+    width: 100%;
+    height: auto;
+  }
+}
+.promo-cards-card-descr {
+  margin: 5px 20px 26px 20px;  
+  // border: 1px dotted blue;
+  p:first-of-type {
+    display: inline-block;    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin-right: 4px;
+  }
+
+  .indicator-circle {
+    display: inline-block;
+    box-sizing: border-box;      
+    width: 8px;
+    height: 8px;
+    margin-left: 2px;    
+    border-radius: 50%;
+  }
+  p:nth-of-type(2) {
+    display: inline-block;
+    margin-left: 8px;
+    color: $blue;    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  p:nth-of-type(3) {
+    display: inline-block;
+    margin: 0;    
+    font-size: 16px;    
+    line-height: 24px;    
+    color: #1a1a25;    
+  }
+  .rating-stars {    
     display: flex;
     align-items: center;
-    img {
-      margin-left: 8px;
+    margin-top: 8px;
+    p {
+      margin: 0 4px 0 0;
+      font-weight: 500;    
+      font-size: 12px;    
+      line-height: 15px;    
+      color: $lgray;    
+    }
+    img {      
+      margin-bottom: 2px;
+      margin-right: 1px;
     }
   }
+  
+  .buy-price-wrap {
+    margin: 17.5px 0px 26px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      .card-price {
+        display: block;
+        margin: 0;
+        font-weight: 700;    
+        font-size: 17px;    
+        line-height: 136%;    
+        color: #1a1a25;    
+      }
+      .card-old-price {
+        display: block;
+        margin: 0;       
+        font-size: 16px;    
+        line-height: 136%;    
+        color: #858FA4;
+        text-decoration: line-through;
+      }
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $red;
+      border: 0;
+      border-radius: 4px;
+      height: calc(42px + 0.6vw);
+      max-height: 49px;    
+      width: 47%;
+      color: white;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      img {
+        margin-right: 9px;
+      }
+      &:hover {
+        background-color: $hover-red;
+      }
+    }
+  }  
+}
+.promo-button {
+  @include common-red-button;
+  margin: 30px 0 103px 15px;
+}
+// ------------------------------------------------------------------------------
+// ---------------------------Идеи и подборки------------------------------------
+// ------------------------------------------------------------------------------
+#main-ideas {
+  background-color: $dgray;
+  .frame {
+    padding-top: 119px;
+    h2 {
+      display: block;
+      margin: 30px 15px;      
+      @include h2-desktop();
+      color: white;         
+    }
+    .ideas-img-container {
+      margin: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      img:nth-of-type(1) {
+        width: 49%;
+        height: auto;
+      }
+      img:nth-of-type(2), img:nth-of-type(3) {
+        width: 23.5%;
+        height: auto;
+      }
+    }
+    .ideas-button {
+      @include common-red-button;
+      border-color: white;
+      color: white;
+      margin: 30px 0 102px 15px;
+      &:hover {
+        color: $dgray;
+        background-color: white;
+      }
+    }
+  }
+}
+// ------------------------------------------------------------------------------
+// ---------------------------Популярные бренды------------------------------------
+// ------------------------------------------------------------------------------
+#main-popular-brands {
+  .frame {
+    .pop-brands-container {
+      margin: 0 15px;
+      padding-top: 120px;
+      h2 {
+        padding-left: 0;
+        font-size: 30px;
+      }
+      .pop-brands-categories {
+        margin: 30px 0;
+        padding-left: 0;
+        li {
+          display: inline-block;
+          margin-right: 30px;
+          text-decoration: none;
+          font-size: 16px;
+          line-height: 20.8px;
+          font-weight: 500;
+          color: $txt;
+        }
+      }
+      .pop-brands-brands {
+        display: flex;
+        border: 1px solid rgba(133, 143, 164, 0.2);        
+        flex-wrap: wrap;        
+        &-row {
+          display: flex;         
+          .pop-brands-brand {
+            box-sizing: border-box;            
+            width: 20%;
+            height: auto;
+          }
+        }        
+      }
+      button {
+        @include common-red-button();
+        margin: 30px 0;
+      }      
+    }
+  }
+}
+
+
+
+// ------------------------------------------------------------------------------
+// ---------------------------Технические индикаторы-----------------------------
+// ------------------------------------------------------------------------------
+.in-stock {
+  color: $lime-green;
+}
+.limited-stock {
+  color: #F99808;
+}
+.out-of-stock {
+  color: $red;
+}
+.green-filled {
+  border: 0.5px solid $lime-green;
+  background-color: $lime-green;
+}
+.green-empty {
+  border: 0.5px solid $lime-green;  
+}
+.orange-filled {
+  border: 0.5px solid #F99808;
+  background-color: #F99808;
+}
+.orange-empty {
+  border: 0.5px solid #F99808;  
+}
+.red-empty {
+  border: 0.5px solid $red;  
 }
 
 // ------------------------------------------------------------------------------
 // ---------------------------Медиазапросы---------------------------------------
 // ------------------------------------------------------------------------------
+
 
 @media (max-width: 1409px) {
   body {
