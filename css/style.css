@@ -1211,6 +1211,173 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
   color: white;
 }
 
+#main-help .frame .main-help-cont {
+  margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 470px;
+}
+
+#main-help .frame .main-help-cont .main-help-white-block {
+  margin: 125px 0 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #858FA433;
+  width: 25%;
+  height: 65%;
+}
+
+#main-help .frame .main-help-cont .main-help-white-block > img {
+  margin-top: 27px;
+}
+
+#main-help .frame .main-help-cont .main-help-white-block h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #1a1a25;
+  margin-bottom: 10px;
+}
+
+#main-help .frame .main-help-cont .main-help-white-block p {
+  margin: 0px 47.25px 20px 47.25px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #384255;
+}
+
+#main-help .frame .main-help-cont .main-help-white-block div {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+#main-help .frame .main-help-cont .main-help-white-block div a {
+  display: inline-block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-decoration: none;
+  color: #f53b49;
+}
+
+#main-help .frame .main-help-cont .main-help-white-block div img {
+  position: relative;
+  top: 1px;
+  margin-left: 8px;
+}
+
+#main-help .frame .main-help-cont .main-help-red-block {
+  margin: 102px 0 40px 0;
+  background-color: #f53b49;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  height: 70%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px 6px 0px 0px;
+}
+
+#main-help .frame .main-help-cont .main-help-red-block .main-help-red-block-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 9px 0px 38px;
+  width: 48.2%;
+  height: 100%;
+}
+
+#main-help .frame .main-help-cont .main-help-red-block .main-help-red-block-col1 h3 {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  line-height: 24px;
+  font-weight: 800;
+  color: white;
+}
+
+#main-help .frame .main-help-cont .main-help-red-block .main-help-red-block-col1 p {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #F6F6F6;
+}
+
+#main-help .frame .main-help-cont .main-help-red-block .main-help-red-block-col1 div {
+  position: relative;
+  padding-top: 20px;
+}
+
+#main-help .frame .main-help-cont .main-help-red-block .main-help-red-block-col1 div a {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-decoration: none;
+  color: white;
+}
+
+#main-help .frame .main-help-cont .main-help-red-block .main-help-red-block-col1 div img {
+  position: relative;
+  top: 1px;
+  margin-left: 8px;
+}
+
+#main-help .frame .main-help-cont .main-help-red-block .main-help-red-block-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 38.6%;
+  height: auto;
+}
+
 .in-stock {
   color: #2FC509;
 }
