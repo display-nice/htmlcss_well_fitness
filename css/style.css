@@ -15,6 +15,18 @@ body {
   background-color: #F7F7F7;
 }
 
+h2 {
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
 header .header-bg-menu-1 {
   background-color: #1a1a25;
 }
@@ -1376,6 +1388,227 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
           justify-content: end;
   width: 38.6%;
   height: auto;
+}
+
+#main-about-company {
+  position: relative;
+}
+
+#main-about-company .russia-map {
+  position: absolute;
+  right: 1px;
+  bottom: -40px;
+  width: 56.8%;
+  height: auto;
+}
+
+#main-about-company .frame .about-company-descr {
+  margin-top: 120px;
+  margin-left: 15px;
+  width: 39.7%;
+  height: auto;
+}
+
+#main-about-company .frame .about-company-descr h2 {
+  margin-top: 0;
+}
+
+#main-about-company .frame .about-company-descr h3 {
+  font-size: 34px;
+  line-height: 48px;
+  font-weight: 400;
+  color: #384255;
+}
+
+#main-about-company .frame .about-company-descr p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #384255;
+}
+
+#main-about-company .frame .about-company-descr button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #f53b49;
+  background-color: transparent;
+  border-radius: 4px;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f53b49;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 40px;
+}
+
+#main-about-company .frame .about-company-descr button:hover {
+  background-color: #f53b49;
+  color: white;
+}
+
+#main-partnership {
+  margin-top: 96px;
+}
+
+#main-partnership .frame .main-partnership-cont {
+  margin: 0 15px;
+  background-color: #1a1a25;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#main-partnership .frame .main-partnership-cont img {
+  width: 34.32%;
+  height: auto;
+}
+
+#main-partnership .frame .main-partnership-cont .main-partnership-descr {
+  width: 40.56%;
+  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#main-partnership .frame .main-partnership-cont .main-partnership-descr p {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: white;
+}
+
+#main-partnership .frame .main-partnership-cont .main-partnership-descr p span {
+  color: #f53b49;
+}
+
+#main-partnership .frame .main-partnership-cont .main-partnership-descr button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #f53b49;
+  background-color: transparent;
+  border-radius: 4px;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f53b49;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+#main-partnership .frame .main-partnership-cont .main-partnership-descr button:hover {
+  background-color: #f53b49;
+  color: white;
+}
+
+#main-partnership .frame .main-partnership-cont .main-partnership-descr button:hover {
+  color: #1a1a25;
+  background-color: #fff;
+}
+
+#main-news-and-blog .frame {
+  position: relative;
+}
+
+#main-news-and-blog .frame h2 {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#main-news-and-blog .frame > h3 {
+  position: absolute;
+  display: inline-block;
+  margin-left: 30px;
+  top: 10px;
+  color: #828282;
+}
+
+#main-news-and-blog .frame .main-news {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+}
+
+#main-news-and-blog .frame .main-news-card {
+  max-width: 315px;
+  margin-right: 30px;
+}
+
+#main-news-and-blog .frame .main-news-card h3 {
+  max-width: 230px;
+  color: #1a1a25;
+}
+
+#main-news-and-blog .frame .main-news-card-descr {
+  max-width: 230px;
+  color: #384255;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#main-news-and-blog .frame .main-news-card-date {
+  color: #1a1a25;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#main-news-and-blog .frame .main-news span {
+  position: absolute;
+  top: 70px;
+  right: 24px;
+}
+
+#main-news-and-blog .frame .main-news div:nth-of-type(5) {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+#main-news-and-blog .frame button {
+  margin-left: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #f53b49;
+  background-color: transparent;
+  border-radius: 4px;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f53b49;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 40px;
+}
+
+#main-news-and-blog .frame button:hover {
+  background-color: #f53b49;
+  color: white;
 }
 
 .in-stock {

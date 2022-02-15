@@ -73,10 +73,6 @@ $lh-header: 140%;
     background-color: inherit;
   }
 }
-@mixin h2-desktop {
-
-}
-
 
 .frame {
   max-width: 1440px;
@@ -92,6 +88,16 @@ body {
   font-family: "Inter", sans-serif;
   font-display: swap;
   background-color: #F7F7F7;
+}
+h2 {  
+  font-size: 30px;
+  line-height: 33px;  
+  font-weight: 700;
+}
+h3 {  
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
 }
 // border-bottom: 2px dotted red;
 
@@ -749,8 +755,7 @@ main {
     padding-top: 119px;
     h2 {
       display: block;
-      margin: 30px 15px;      
-      @include h2-desktop();
+      margin: 30px 15px;
       color: white;         
     }
     .ideas-img-container {
@@ -956,7 +961,155 @@ main {
   }
 }
 
+// ------------------------------------------------------------------------------
+// ---------------------------О компании-----------------------------------------
+// ------------------------------------------------------------------------------
+#main-about-company {
+  position: relative;
+  .russia-map {
+    position: absolute;
+    right: 1px;
+    bottom: -40px;
+    width: 56.8%;
+    height: auto;
+  }
+  .frame {
+    .about-company-descr {
+      margin-top: 120px;
+      margin-left: 15px;
+      width: 39.7%;
+      height: auto;
+      h2 {
+        margin-top: 0;        
+      }
+      h3 {
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: 400;
+        color: $txt;
+      }
+      p {
+        font-size: 18px;
+        line-height: 27px;
+        color: $txt;
+      }
+      button {
+        @include common-red-button();
+        margin-top: 40px;
+      }
+    }
+  }
+}
 
+// ------------------------------------------------------------------------------
+// ---------------------------Партнёрство (стать партнёром)----------------------
+// ------------------------------------------------------------------------------
+#main-partnership {
+  margin-top: 96px;
+  .frame {
+    .main-partnership-cont {
+      margin: 0 15px;
+      background-color: $dgray;
+      display: flex;
+      justify-content: space-evenly;
+      img {
+        width: 34.32%;
+        height: auto;
+      }
+      .main-partnership-descr {
+        width: 40.56%;
+        height: auto;
+        align-self: center;
+        p {
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 43px;
+          color: white;
+          span {
+            color: $red;
+          }
+        }
+        button {          
+          @include common-red-button();
+          color: white;
+          border-color: rgba(255, 255, 255, 0.7);
+          &:hover {
+            color: $dgray;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+// ------------------------------------------------------------------------------
+// ---------------------------Новости, блог--------------------------------------
+// ------------------------------------------------------------------------------
+#main-news-and-blog {
+  // display: flex;
+  // justify-content: flex-end;
+  .frame {
+    // width: 87.8%;
+    // max-width: 1684px;
+    // border: 1px dotted blue;    
+    position: relative;
+    h2 {
+      display: inline-block;
+      margin-left: 15px;
+    }
+    > h3 {
+      position: absolute;
+      display: inline-block;
+      margin-left: 30px;
+      top: 10px;
+      color: #828282;
+    }
+    .main-news {
+      margin-left: 15px;
+      display: flex;
+      flex-wrap: nowrap;
+      position: relative;   
+      &-card {        
+        max-width: 315px;
+        margin-right: 30px;
+        // img {
+        //   width: 100%;
+        //   height: auto;
+        // }
+        h3 {
+          max-width: 230px;
+          color: $dgray;
+        }
+        &-descr {
+          max-width: 230px;
+          color: $txt;
+          font-size: 16px;
+          line-height: 24px;
+        }
+        &-date {          
+          color: $dgray;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      span {
+        position: absolute;
+        top: 70px;
+        right: 24px;
+        // top: 16%;
+        // right: 1.7%;
+      }      
+      div:nth-of-type(5) {
+        filter:opacity(50%)
+      }
+    }
+    button {
+      margin-left: 15px;
+      @include common-red-button();
+      margin-top: 40px;
+    }
+  }
+}
 
 // ------------------------------------------------------------------------------
 // ---------------------------Технические индикаторы-----------------------------
@@ -987,6 +1140,8 @@ main {
 .red-empty {
   border: 0.5px solid $red;  
 }
+
+
 
 // ------------------------------------------------------------------------------
 // ---------------------------Медиазапросы---------------------------------------
