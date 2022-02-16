@@ -1627,7 +1627,7 @@ footer .frame .footer-row1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 3px solid rgba(133, 143, 164, 0.15);
+  border-bottom: 3px solid rgba(133, 143, 164, 0.15);
 }
 
 footer .frame .footer-row3 {
