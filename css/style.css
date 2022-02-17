@@ -712,6 +712,11 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
   margin: 0 15px;
 }
 
+.home-equip-cards img:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
 .home-equip-cards-wrapper1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,6 +792,11 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
 
 .fitclub-equip {
   margin: 0 15px;
+}
+
+.fitclub-equip-cards img:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
 }
 
 .fitclub-equip-cards-wrapper1 {

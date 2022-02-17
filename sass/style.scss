@@ -507,14 +507,12 @@ main {
 .home-equip {
   margin: 0 15px;
   &-cards {
-    // display: flex;
-    // flex-wrap: wrap;
-    // max-height: 740px;
-    // height: 100%;
+    img:hover {
+      filter: brightness(0.8);
+    }
     &-wrapper1 {
       display: flex;           
-      justify-content: space-between;
-      // max-height: 430px;      
+      justify-content: space-between;         
       > img {
         width: 23.5%;
         height: auto;
@@ -533,10 +531,7 @@ main {
       }
     }
     &-wrapper2 {      
-      margin-top: 25px;
-      // max-width: 1410px;
-      // max-height: 280px;      
-      // width: 100%;
+      margin-top: 25px;      
       display: flex;      
       justify-content: space-between;  
       img {        
@@ -558,6 +553,9 @@ main {
 .fitclub-equip {
   margin: 0 15px;  
   &-cards {
+    img:hover {
+      filter: brightness(0.8);
+    }
     &-wrapper1 {
       display: flex;
       justify-content: space-between;      
