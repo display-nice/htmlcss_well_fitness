@@ -1066,8 +1066,8 @@ main {
   margin-top: 96px;
   .frame {
     .main-partnership-cont {
-      margin: 0 15px;
       background-color: $dgray;
+      margin: 0 15px;
       display: flex;
       justify-content: space-evenly;
       img {
@@ -1104,12 +1104,8 @@ main {
 // ---------------------------Новости, блог--------------------------------------
 // ------------------------------------------------------------------------------
 #main-news-and-blog {
-  // display: flex;
-  // justify-content: flex-end;
-  .frame {
-    // width: 87.8%;
-    // max-width: 1684px;
-    // border: 1px dotted blue;    
+  margin-top: 120px;
+  .frame {      
     position: relative;
     h2 {
       display: inline-block;

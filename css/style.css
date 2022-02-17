@@ -1549,8 +1549,8 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
 }
 
 #main-partnership .frame .main-partnership-cont {
-  margin: 0 15px;
   background-color: #1a1a25;
+  margin: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1613,6 +1613,10 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
 #main-partnership .frame .main-partnership-cont .main-partnership-descr button:hover {
   color: #1a1a25;
   background-color: #fff;
+}
+
+#main-news-and-blog {
+  margin-top: 120px;
 }
 
 #main-news-and-blog .frame {
