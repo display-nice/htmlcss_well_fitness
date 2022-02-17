@@ -331,7 +331,7 @@ header .header-bg-menu-2 .frame .header-menu-2 .header-center-submenu button:nth
   margin-left: 29px;
 }
 
-header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-2 {
+header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper1 {
   width: 29.4%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,7 +341,7 @@ header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-2 {
           justify-content: end;
 }
 
-header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-2 .right-submenu {
+header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper1 .right-submenu {
   min-width: 155px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,6 +352,54 @@ header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-2 .right-s
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper1 .right-submenu div {
+  position: relative;
+}
+
+header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper1 .right-submenu div::after {
+  content: "15";
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16px;
+  height: 16px;
+  background-color: #f53b49;
+  border-radius: 50%;
+  border: 2px solid #1a1a25;
+  font-size: 10px;
+  line-height: 12px;
+  color: white;
+}
+
+header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper1 .right-submenu div:nth-of-type(2) > img {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper1 .right-submenu div:nth-of-type(2)::after {
+  top: -7.5px;
+  left: 15px;
+}
+
+header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper1 .right-submenu div:nth-of-type(3) {
+  top: -2px;
+}
+
+header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper1 .right-submenu div:nth-of-type(3)::after {
+  content: "1";
+  top: -3px;
+  left: 13px;
 }
 
 header .header-bg-menu-3 {

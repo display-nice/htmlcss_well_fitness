@@ -297,7 +297,7 @@ header {
             margin-left: 29px;
           }
         }        
-        .header-menu-2-wrapper-2 {
+        .header-menu-2-wrapper1 {
           width: 29.4%;
           display: flex;
           justify-content: end;
@@ -306,6 +306,43 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            div {
+              position: relative;              
+              &::after {
+                content: "15";
+                position: absolute;
+                top: -9px;
+                left: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 16px;
+                height: 16px;
+                background-color: $red;
+                border-radius: 50%;
+                border: 2px solid $dgray;
+                font-size: 10px;
+                line-height: 12px;
+                color: $white;
+              }
+            }
+            div:nth-of-type(2) {
+              > img {
+                filter: brightness(0.7);
+              }
+              &::after {
+                top: -7.5px;
+                left: 15px;
+              }
+            }
+            div:nth-of-type(3) {
+              top: -2px;      
+              &::after {
+                content: "1";
+                top: -3px;
+                left: 13px;
+              }
+            }
           }
         }
       }
