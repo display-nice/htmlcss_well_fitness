@@ -1632,6 +1632,7 @@ footer .frame .footer-row1 {
 
 footer .frame .footer-row3 {
   margin-right: 80px;
+  margin-left: 15px;
   width: 1345px;
 }
 
@@ -1682,7 +1683,7 @@ footer .frame .footer-row3 {
 
 .footer-contacts {
   margin-top: 82px;
-  width: 19%;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1693,6 +1694,10 @@ footer .frame .footer-row3 {
 }
 
 .footer-contacts-subscribe {
+  border-radius: 5px;
+}
+
+.footer-contacts-subscribe-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1712,24 +1717,33 @@ footer .frame .footer-row3 {
   border-radius: 5px;
 }
 
-.footer-contacts-subscribe:hover {
-  color: white;
-  background-color: #384255;
-}
-
-.footer-contacts-subscribe span {
+.footer-contacts-subscribe-button span {
   padding: 14px;
   color: #858FA4;
   font-size: 14px;
   line-height: 20px;
 }
 
-.footer-contacts-subscribe img {
+.footer-contacts-subscribe-button img {
   padding: 14px;
 }
 
+.footer-contacts-subscribe-button:hover {
+  color: white;
+  background-color: #384255;
+}
+
+.footer-contacts-subscribe:hover .footer-subscribe-success {
+  color: #2FC509;
+}
+
+.footer-contacts-subscribe .footer-subscribe-success {
+  color: transparent;
+  margin-bottom: 0;
+}
+
 .footer-contacts-phones {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .footer-contacts-phones span {
@@ -1787,6 +1801,7 @@ footer .frame .footer-row3 {
 }
 
 .footer-partnership {
+  margin-top: 51px;
   width: 1345px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1843,6 +1858,9 @@ footer .frame .footer-row3 {
 }
 
 .main-copyright {
+  display: inline-block;
+  margin-left: 15px;
+  padding-bottom: 30px;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;

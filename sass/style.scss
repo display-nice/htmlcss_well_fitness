@@ -1130,6 +1130,7 @@ footer {
     }
     .footer-row3 {
       margin-right: 80px;
+      margin-left: 15px;
       width: 1345px;
     }
   }
@@ -1172,34 +1173,56 @@ footer {
 }
 .footer-contacts {
   margin-top: 82px; 
-  width: 19%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   &-subscribe {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 0;
-    appearance: none;
-    box-sizing: border-box;
-    background: rgba(133, 143, 164, 0.15);
     border-radius: 5px;
-    &:hover {
-      color: $white;
-      background-color: $txt;
+    &-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 0;
+      appearance: none;
+      box-sizing: border-box;
+      background: rgba(133, 143, 164, 0.15);
+      border-radius: 5px;
+      span {
+        padding: 14px;
+        color: $gray4;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      img {
+        padding: 14px;
+      }
+      &:hover {
+        color: $white;
+        background-color: $txt;            
+      }
     }
-    span {
-      padding: 14px;
-      color: $gray4;
-      font-size: 14px;
-      line-height: 20px;
+    &:hover {      
+      .footer-subscribe-success {
+        color: $lime-green;
+      }      
+    }    
+    .footer-subscribe-success {
+      color: transparent;
+      margin-bottom: 0;
     }
-    img {
-      padding: 14px;
-    }
+    // &:focus {
+    //   color: $red;
+    //   background-color: $txt;
+    //   &::after {
+    //     content: "Вы успешно подписались";
+    //     color: $lime-green;
+    //     font-size: 14px;
+    //     line-height: 20px;
+    //   }
+    // }
   }
   &-phones {
-    margin-top: 50px;
+    margin-top: 20px;
     span {
       display: inline-block;
       margin-bottom: 8px;
@@ -1250,6 +1273,7 @@ footer {
 }
 
 .footer-partnership {
+  margin-top: 51px;  
   width: 1345px;
   display: flex;  
   align-items: center;
@@ -1289,7 +1313,10 @@ footer {
     margin-top: 0;
   }
 }
-.main-copyright {  
+.main-copyright {
+  display: inline-block;
+  margin-left: 15px;
+  padding-bottom: 30px;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -1299,7 +1326,6 @@ footer {
   text-align: left;
   color: $gray4;
 }
-
 // ------------------------------------------------------------------------------
 // ---------------------------Технические индикаторы-----------------------------
 // ------------------------------------------------------------------------------
