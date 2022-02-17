@@ -219,8 +219,8 @@ header .header-bg-menu-2 .frame .header-menu-2 {
           justify-content: space-between;
 }
 
-header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 {
-  width: 70%;
+header .header-bg-menu-2 .frame .header-menu-2 .header-left-submenu {
+  width: 16.1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,7 +232,7 @@ header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 {
           align-items: center;
 }
 
-header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 .header-catalogue-button {
+header .header-bg-menu-2 .frame .header-menu-2 .header-left-submenu .header-catalogue-button {
   border: 0;
   border-radius: 4px;
   width: 127px;
@@ -240,15 +240,15 @@ header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 .header-
   background-color: #f53b49;
 }
 
-header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 .header-catalogue-button:hover {
+header .header-bg-menu-2 .frame .header-menu-2 .header-left-submenu .header-catalogue-button:hover {
   background-color: #e32a38;
 }
 
-header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 .header-catalogue-button:active {
+header .header-bg-menu-2 .frame .header-menu-2 .header-left-submenu .header-catalogue-button:active {
   background-color: #e32a38;
 }
 
-header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 .header-catalogue-button div {
+header .header-bg-menu-2 .frame .header-menu-2 .header-left-submenu .header-catalogue-button div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,7 +260,7 @@ header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 .header-
           align-items: center;
 }
 
-header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 .header-catalogue-button span {
+header .header-bg-menu-2 .frame .header-menu-2 .header-left-submenu .header-catalogue-button span {
   margin-left: 10px;
   color: white;
   font-family: Inter;
@@ -270,13 +270,14 @@ header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 .header-
   margin-top: 3px;
 }
 
-header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 .search {
+header .header-bg-menu-2 .frame .header-menu-2 .header-left-submenu .search {
   background-color: #1a1a25;
   border: 0;
   margin-top: 2px;
+  margin-left: 20px;
 }
 
-header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 .small-vertical-line {
+header .header-bg-menu-2 .frame .header-menu-2 .header-left-submenu .small-vertical-line {
   width: 1px;
   height: 30px;
   border-radius: 1px;
@@ -289,16 +290,49 @@ header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 .small-v
   height: 40px;
 }
 
-header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-1 a {
-  text-decoration: none;
+header .header-bg-menu-2 .frame .header-menu-2 .header-center-submenu {
+  width: 54.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-bg-menu-2 .frame .header-menu-2 .header-center-submenu .header-menu-button {
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 12px 14px;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
   font-family: Inter;
   color: white;
   font-size: 14px;
   line-height: 140%;
 }
 
+header .header-bg-menu-2 .frame .header-menu-2 .header-center-submenu .header-menu-button:hover {
+  background-color: #2a2c38;
+}
+
+header .header-bg-menu-2 .frame .header-menu-2 .header-center-submenu .header-menu-button:focus {
+  background-color: #2a2c38;
+}
+
+header .header-bg-menu-2 .frame .header-menu-2 .header-center-submenu button:nth-of-type(1) {
+  margin-left: 29px;
+}
+
 header .header-bg-menu-2 .frame .header-menu-2 .header-menu-2-wrapper-2 {
-  width: 30%;
+  width: 29.4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1627,7 +1661,6 @@ footer .frame .footer-row1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 3px solid rgba(133, 143, 164, 0.15);
 }
 
 footer .frame .footer-row3 {

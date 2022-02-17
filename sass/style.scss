@@ -4,6 +4,7 @@ $txt: #384255;
 $gray4: #858FA4;
 $white: white;
 $black-rock: #2a2c38;
+$graybutton: rgba(133, 143, 164, 0.15);
 $red: #f53b49;
 $hover-red: #E32A38;
 $lime-green: #2FC509;
@@ -225,9 +226,9 @@ header {
         max-width: 1410px;
         height: 81px;
         display: flex;
-        justify-content: space-between;
-        .header-menu-2-wrapper-1 {
-          width: 70%;
+        justify-content: space-between;        
+        .header-left-submenu {
+          width: 16.1%;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -262,21 +263,42 @@ header {
             background-color: $dgray;
             border: 0;
             margin-top: 2px;
+            margin-left: 20px;
           }
           .small-vertical-line {
             @include small-vertical-line;
             height: 40px;
           }
-          a {
-            text-decoration: none;
+        }
+        .header-center-submenu {
+          width: 54.5%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .header-menu-button {            
+            border: 0;            
+            appearance: none;
+            padding: 12px 14px;            
+            background-color: transparent;
+            box-sizing: border-box;
+            border-radius: 6px;
             font-family: Inter;
             color: white;
             font-size: $fs-header;
             line-height: $lh-header;
+            &:hover {
+              background-color: $black-rock;
+            }
+            &:focus {
+              background-color: $black-rock;
+            }
           }
-        }
+          button:nth-of-type(1) {
+            margin-left: 29px;
+          }
+        }        
         .header-menu-2-wrapper-2 {
-          width: 30%;
+          width: 29.4%;
           display: flex;
           justify-content: end;
           .right-submenu {
@@ -289,7 +311,6 @@ header {
       }
     }
   }
-
   .header-bg-menu-3 {
     background-color: $black-rock;
     .frame {
@@ -1122,11 +1143,9 @@ footer {
     .footer-row1 {
       margin: 0 80px 0 15px;
       width: 1345px;      
-      display: flex;
-      // flex-direction: row;
+      display: flex;      
       flex-wrap: wrap;
-      justify-content: space-between;
-      border-bottom: 3px solid rgba(133, 143, 164, 0.15);
+      justify-content: space-between;      
     }
     .footer-row3 {
       margin-right: 80px;
