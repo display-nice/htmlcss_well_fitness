@@ -887,18 +887,16 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
 }
 
 .promo-cards-card {
   background-color: #fff;
   position: relative;
-  max-width: 300px;
-  max-height: 505px;
-  min-width: 220px;
-  min-height: 387px;
+  width: 300px;
+  height: 505px;
   border-radius: 6px;
   margin-right: 30px;
   display: -webkit-box;
@@ -919,18 +917,44 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
 
 .promo-cards-card > img {
   border-radius: 6px 6px 0 0;
-  width: 100%;
-  max-width: 300px;
-  max-height: 300px;
-  min-width: 220px;
-  min-height: 220px;
-  height: auto;
 }
 
 .promo-cards-card:hover .thumb-up, .promo-cards-card:hover .new {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-left: 10px;
+}
+
+.promo-cards .promo-cards-card:nth-of-type(5) {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+.promo-cards .promo-cards-card:nth-of-type(5) .indicator-circle, .promo-cards .promo-cards-card:nth-of-type(5) .promo-stock {
+  display: none;
+}
+
+.promo-cards .promo-cards-card:nth-of-type(5) .is-in-showroom {
+  margin-left: 0;
+}
+
+.promo-cards .promo-to-right-arrow {
+  width: 50px;
+  height: 50px;
+  background: url("/icons/arrow2.svg") no-repeat 50% 39%;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 120px;
+  right: 95px;
+}
+
+.promo-cards .promo-to-right-arrow:hover {
+  width: 50px;
+  height: 50px;
+  background: url("/icons/arrow2-red.svg") no-repeat 50% 50%;
 }
 
 .promo-cards-card-icons-left {
@@ -1028,9 +1052,11 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
 
 .promo-cards-card-descr {
   margin: 5px 20px 26px 20px;
+  width: 300px;
+  height: auto;
 }
 
-.promo-cards-card-descr p:first-of-type {
+.promo-cards-card-descr .promo-stock {
   display: inline-block;
   font-weight: 500;
   font-size: 12px;
@@ -1044,11 +1070,11 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
           box-sizing: border-box;
   width: 8px;
   height: 8px;
-  margin-left: 2px;
+  margin-left: 0px;
   border-radius: 50%;
 }
 
-.promo-cards-card-descr p:nth-of-type(2) {
+.promo-cards-card-descr .is-in-showroom {
   display: inline-block;
   margin-left: 8px;
   color: #4B7EE8;
@@ -1057,7 +1083,7 @@ main .banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-
   line-height: 15px;
 }
 
-.promo-cards-card-descr p:nth-of-type(3) {
+.promo-cards-card-descr .promo-good-name {
   display: inline-block;
   margin: 0;
   font-size: 16px;
