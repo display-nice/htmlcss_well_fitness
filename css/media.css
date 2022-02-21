@@ -1,0 +1,33 @@
+@media (max-width: 1409px) {
+  body {
+    background-color: #2FC509;
+  }
+  .frame {
+    max-width: 980px;
+  }
+  .header-bg-menu-2, .header-menu-1-wrapper-2 {
+    display: none !important;
+  }
+  .header-menu-1-wrapper-1 {
+    width: 31%;
+  }
+  .header-menu-1 .header-menu1-icons960px {
+    width: 31%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 959px) {
+  body {
+    background-color: goldenrod;
+  }
+}
+/*# sourceMappingURL=media.css.map */

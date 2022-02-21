@@ -92,6 +92,9 @@ body {
   font-display: swap;
   background-color: #F7F7F7;
 }
+section {
+  margin-top: 120px !important;
+}
 h2 {  
   font-size: 30px;
   line-height: 33px;  
@@ -165,9 +168,7 @@ header {
             letter-spacing: 0em;
             color: white;
           }
-          .small-vertical-line-1 {
-            @include small-vertical-line;
-          }
+          
           .header-phone {
             text-align: center;
             color: white;
@@ -213,6 +214,9 @@ header {
               margin-left: 14px;
             }
           }
+        }
+        .header-menu1-icons960px {
+          display: none;
         }
       }
     }
@@ -306,43 +310,6 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            div {
-              position: relative;              
-              &::after {
-                content: "15";
-                position: absolute;
-                top: -9px;
-                left: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 16px;
-                height: 16px;
-                background-color: $red;
-                border-radius: 50%;
-                border: 2px solid $dgray;
-                font-size: 10px;
-                line-height: 12px;
-                color: $white;
-              }
-            }
-            div:nth-of-type(2) {
-              > img {
-                filter: brightness(0.7);
-              }
-              &::after {
-                top: -7.5px;
-                left: 15px;
-              }
-            }
-            div:nth-of-type(3) {
-              top: -2px;      
-              &::after {
-                content: "1";
-                top: -3px;
-                left: 13px;
-              }
-            }
           }
         }
       }
@@ -392,107 +359,146 @@ header {
     }
   }
 }
-
+.header-compare, .header-favorite, .header-cart {
+  position: relative;              
+  &::after {
+    content: "15";
+    position: absolute;
+    top: -9px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    background-color: $red;
+    border-radius: 50%;
+    border: 2px solid $dgray;
+    font-size: 10px;
+    line-height: 12px;
+    color: $white;
+  }
+}
+.header-favorite {
+  > img {
+    filter: brightness(0.7);
+  }
+  &::after {
+    top: -7.5px;
+    left: 15px;
+  }
+}
+.header-cart {
+  top: -2px;      
+  &::after {
+    content: "1";
+    top: -3px;
+    left: 13px;
+  }
+}
+.small-vertical-line-1 {
+  @include small-vertical-line;
+}
 // ------------------------------------------------------------------------------
 // ---------------------------BANNER 1-------------------------------------------
 // ------------------------------------------------------------------------------
-main {
-  .banner-1 {
-    max-width: 1800px;
-    height: 500px;
-    margin: 39px auto 0 auto;
-    background: linear-gradient(180deg, #dedfe7 0%, rgba(233, 234, 239, 0) 100%),
-      #e9eaef;
-    border-radius: 10px;
-    .frame {
-      .banner-1-content {
-        position: relative;
-        max-width: 1410px;
-        margin: 0 15px;
-        display: flex;
-        justify-content: space-between;
-        &-descr {
-          max-width: 36%;
-          margin-top: 83px;
-          p:first-child {
-            padding: 0;
-            margin-top: 0;
-            color: $red;
-            font-family: Inter;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 26px;
-            letter-spacing: 0em;
-            text-align: left;
-          }
-          p:nth-child(2) {
-            margin-top: 0;
-            margin-bottom: 0;
-            font-family: Inter;
-            font-size: 50px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 55px;
-            letter-spacing: 0em;
-            text-align: left;
-          }
-          p:nth-child(3) {
-            margin-top: 24px;
-            margin-bottom: 24px;
-            font-family: Inter;
-            font-size: 50px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 55px;
-            letter-spacing: 0em;
-            text-align: left;
-          }
-          button {
-            @include common-red-button;
-            position: absolute;
-            z-index: 1;
-          }
+#main-banner-1 {
+  max-width: 1800px;
+  height: 500px;
+  margin-top: 39px !important;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(180deg, #dedfe7 0%, rgba(233, 234, 239, 0) 100%),
+    #e9eaef;
+  border-radius: 10px;
+  .frame {
+    .banner-1-content {
+      position: relative;
+      max-width: 1410px;
+      margin: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      &-descr {
+        max-width: 36%;
+        margin-top: 83px;
+        p:first-child {
+          padding: 0;
+          margin-top: 0;
+          color: $red;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: left;
         }
-        &-red-triangle {
+        p:nth-child(2) {
+          margin-top: 0;
+          margin-bottom: 0;
+          font-family: Inter;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 55px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        p:nth-child(3) {
+          margin-top: 24px;
+          margin-bottom: 24px;
+          font-family: Inter;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 55px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        button {
+          @include common-red-button;
           position: absolute;
-          max-width: 1080px;
-          scale: 1.1;
-          top: 403.2px;
-          opacity: 0.75;
-          filter: saturate(1.6) contrast(1.5);
+          z-index: 1;
         }
-        &-img-buttons {
-          max-width: 54%;
+      }
+      &-red-triangle {
+        position: absolute;
+        max-width: 1080px;
+        scale: 1.1;
+        top: 403.2px;
+        opacity: 0.75;
+        filter: saturate(1.6) contrast(1.5);
+      }
+      &-img-buttons {
+        max-width: 54%;
+        display: flex;
+        .banner-1-arrow-buttons {
+          margin-bottom: 30px;
           display: flex;
-          .banner-1-arrow-buttons {
-            margin-bottom: 30px;
-            display: flex;
-            align-items: end;
-            .to-left-arrow-button {
-              @include white-bg-round-button();
-              @include arrow();
-              &:hover {
-                background-color: $red;
-                span {
-                  background-color: white;
-                }
-              }
-            }
-            .to-right-arrow-button {
-              @include white-bg-round-button();
-              @include arrow();
+          align-items: end;
+          .to-left-arrow-button {
+            @include white-bg-round-button();
+            @include arrow();
+            &:hover {
+              background-color: $red;
               span {
-                transform: rotate(180deg);
+                background-color: white;
               }
-              &:hover {
-                background-color: $red;
-                span {
-                  background-color: white;
-                }
-              }
-              margin-left: 10px;
             }
+          }
+          .to-right-arrow-button {
+            @include white-bg-round-button();
+            @include arrow();
+            span {
+              transform: rotate(180deg);
+            }
+            &:hover {
+              background-color: $red;
+              span {
+                background-color: white;
+              }
+            }
+            margin-left: 10px;
           }
         }
       }
@@ -542,7 +548,7 @@ main {
   }
   button {
     @include common-red-button();
-    margin: 30px 0;
+    margin-top: 30px;
   }
 }
 
@@ -821,7 +827,7 @@ main {
 }
 .promo-button {
   @include common-red-button;
-  margin: 30px 0 103px 15px;
+  margin: 30px 0 0 15px;
 }
 // ------------------------------------------------------------------------------
 // ---------------------------Идеи и подборки------------------------------------
@@ -866,8 +872,7 @@ main {
 #main-popular-brands {
   .frame {
     .pop-brands-container {
-      margin: 0 15px;
-      padding-top: 120px;
+      margin: 0 15px;      
       h2 {
         padding-left: 0;
         font-size: 30px;
@@ -913,9 +918,10 @@ main {
     .main-help-cont {
       margin: 0 15px;
       display: flex;
-      height: 470px;      
+      align-items: flex-end;
+      // height: 352px;      
       .main-help-white-block {
-        margin: 125px 0 40px 0;
+        margin: 5px 0 40px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -924,7 +930,7 @@ main {
         background-color: #fff;
         border: 1px solid #858FA433;
         width: 25%;
-        height: 65%;
+        height: auto;
         > img {
           margin-top: 27px;
         }
@@ -966,12 +972,12 @@ main {
         }          
       }
       .main-help-red-block {
-        margin: 102px 0 40px 0;
+        margin: -18px 0 40px 0;
         // padding-top: 33px;
         background-color: $red;
         display: flex;          
         width: 25%;
-        height: 70%;
+        height: auto;
         box-sizing: border-box;
         border-radius: 6px 6px 0px 0px;
         .main-help-red-block-col1 {
@@ -982,9 +988,9 @@ main {
           margin: 0px 9px 0px 38px;
           width: 48.2%;
           height: 100%;
-          // > img {
-          //   padding-top: 33px;
-          // }
+          > img {
+            padding-top: 33px;
+          }
           h3 {              
             margin: 0;
             padding: 0;  
@@ -1007,6 +1013,7 @@ main {
           div {
             position: relative;
             padding-top: 20px;
+            padding-bottom: 20px;
             a {
               margin: 0;
               padding: 0;          
@@ -1037,7 +1044,6 @@ main {
     }
   }
 }
-
 // ------------------------------------------------------------------------------
 // ---------------------------О компании-----------------------------------------
 // ------------------------------------------------------------------------------
@@ -1052,7 +1058,7 @@ main {
   }
   .frame {
     .about-company-descr {
-      margin-top: 120px;
+      // margin-top: 120px;
       margin-left: 15px;
       width: 39.7%;
       height: auto;
@@ -1077,12 +1083,10 @@ main {
     }
   }
 }
-
 // ------------------------------------------------------------------------------
 // ---------------------------Партнёрство (стать партнёром)----------------------
 // ------------------------------------------------------------------------------
 #main-partnership {
-  margin-top: 96px;
   .frame {
     .main-partnership-cont {
       background-color: $dgray;
@@ -1123,7 +1127,6 @@ main {
 // ---------------------------Новости, блог--------------------------------------
 // ------------------------------------------------------------------------------
 #main-news-and-blog {
-  margin-top: 120px;
   .frame {      
     position: relative;
     h2 {
@@ -1426,28 +1429,31 @@ footer {
 // ------------------------------------------------------------------------------
 
 
-@media (max-width: 1409px) {
-  body {
-    background-color: $red;
-  }
-  // .fitclub-equip {
-  //   &-cards {      
-  //     img {        
-  //       height: 190px;
-  //     }
-  //   }
-  // } 
-}
+// @media (max-width: 1409px) {
+//   body {
+//     background-color: $red;
+//   }
+//   .header-menu-1-wrapper-2, .header-menu-2 {
+//     display: none;
+//   }
+//   // .fitclub-equip {
+//   //   &-cards {      
+//   //     img {        
+//   //       height: 190px;
+//   //     }
+//   //   }
+//   // } 
+// }
 
-@media (max-width: 959px) {
-  body {
-    background-color: goldenrod;
-  }
-  // .fitclub-equip {
-  //   &-cards {      
-  //     img {        
-  //       height: 140px;
-  //     }
-  //   }
-  // }
-}
+// @media (max-width: 959px) {
+//   body {
+//     background-color: goldenrod;
+//   }
+//   // .fitclub-equip {
+//   //   &-cards {      
+//   //     img {        
+//   //       height: 140px;
+//   //     }
+//   //   }
+//   // }
+// }
