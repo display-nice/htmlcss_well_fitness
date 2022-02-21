@@ -1698,8 +1698,18 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 
 #main-news-and-blog .frame .main-news-card-date {
   color: #1a1a25;
+  opacity: 0.5;
   font-size: 16px;
   line-height: 24px;
+}
+
+#main-news-and-blog .frame .main-news-card:hover img {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+#main-news-and-blog .frame .main-news-card:hover h3, #main-news-and-blog .frame .main-news-card:hover p:nth-of-type(1) {
+  color: #f53b49;
 }
 
 #main-news-and-blog .frame .main-news span {
