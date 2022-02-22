@@ -494,9 +494,12 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   border-radius: 10px;
 }
 
+#main-banner-1 .frame {
+  position: relative;
+}
+
 #main-banner-1 .frame .banner-1-content {
   position: relative;
-  max-width: 1410px;
   margin: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -507,45 +510,31 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 }
 
 #main-banner-1 .frame .banner-1-content-descr {
-  max-width: 36%;
+  width: 30%;
   margin-top: 83px;
 }
 
 #main-banner-1 .frame .banner-1-content-descr p:first-child {
-  padding: 0;
-  margin-top: 0;
+  margin: 0;
   color: #f53b49;
-  font-family: Inter;
   font-size: 24px;
-  font-style: normal;
   font-weight: 900;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
+  line-height: 110%;
 }
 
 #main-banner-1 .frame .banner-1-content-descr p:nth-child(2) {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: Inter;
+  margin: 0;
+  margin-top: 24px;
   font-size: 50px;
-  font-style: normal;
   font-weight: 900;
-  line-height: 55px;
-  letter-spacing: 0em;
-  text-align: left;
+  line-height: 110%;
 }
 
 #main-banner-1 .frame .banner-1-content-descr p:nth-child(3) {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  font-family: Inter;
+  margin: 0;
   font-size: 50px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 55px;
-  letter-spacing: 0em;
-  text-align: left;
+  line-height: 110%;
 }
 
 #main-banner-1 .frame .banner-1-content-descr button {
@@ -566,6 +555,8 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   position: absolute;
   z-index: 1;
 }
@@ -575,24 +566,18 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   color: white;
 }
 
-#main-banner-1 .frame .banner-1-content-red-triangle {
-  position: absolute;
-  max-width: 1080px;
-  scale: 1.1;
-  top: 403.2px;
-  opacity: 0.75;
-  -webkit-filter: saturate(1.6) contrast(1.5);
-          filter: saturate(1.6) contrast(1.5);
-}
-
 #main-banner-1 .frame .banner-1-content-img-buttons {
-  max-width: 54%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+#main-banner-1 .frame .banner-1-content-img-buttons > img {
+  width: 83.3%;
+}
+
 #main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons {
+  width: 16.7%;
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,120 +587,45 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
           align-items: end;
 }
 
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-left-arrow-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
+#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .banner1-to-left-round-button {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  background: url("/icons/arrow1.svg") no-repeat 50% 39%;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
 
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-left-arrow-button span,
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-left-arrow-button span::before,
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-left-arrow-button span::after {
-  display: block;
-  border-radius: 5px;
-  height: 3px;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-left-arrow-button span {
-  width: 16px;
-  background-color: #f53b49;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-left-arrow-button span::before {
-  content: "";
-  width: 55%;
-  -webkit-transform: translate(0px, 3px) rotate(45deg);
-          transform: translate(0px, 3px) rotate(45deg);
-  background-color: inherit;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-left-arrow-button span::after {
-  content: "";
-  width: 55%;
-  -webkit-transform: translate(0px, -6.1px) rotate(-45deg);
-          transform: translate(0px, -6.1px) rotate(-45deg);
-  background-color: inherit;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-left-arrow-button:hover {
-  background-color: #f53b49;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-left-arrow-button:hover span {
-  background-color: white;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-right-arrow-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
+#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .banner1-to-left-round-button:hover {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  background: url("/icons/arrow1-red.svg") no-repeat 50% 50%;
+}
+
+#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .banner1-to-right-round-button {
+  width: 50px;
+  height: 50px;
+  background: url("/icons/arrow2.svg") no-repeat 50% 39%;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   margin-left: 10px;
 }
 
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-right-arrow-button span,
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-right-arrow-button span::before,
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-right-arrow-button span::after {
-  display: block;
-  border-radius: 5px;
-  height: 3px;
+#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .banner1-to-right-round-button:hover {
+  width: 50px;
+  height: 50px;
+  background: url("/icons/arrow2-red.svg") no-repeat 50% 50%;
 }
 
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-right-arrow-button span {
-  width: 16px;
-  background-color: #f53b49;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-right-arrow-button span::before {
-  content: "";
-  width: 55%;
-  -webkit-transform: translate(0px, 3px) rotate(45deg);
-          transform: translate(0px, 3px) rotate(45deg);
-  background-color: inherit;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-right-arrow-button span::after {
-  content: "";
-  width: 55%;
-  -webkit-transform: translate(0px, -6.1px) rotate(-45deg);
-          transform: translate(0px, -6.1px) rotate(-45deg);
-  background-color: inherit;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-right-arrow-button span {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-right-arrow-button:hover {
-  background-color: #f53b49;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .to-right-arrow-button:hover span {
-  background-color: white;
+#main-banner-1 .frame .banner-1-red-triangle {
+  position: absolute;
+  width: 77%;
+  height: auto;
+  bottom: 0%;
+  opacity: 0.75;
+  -webkit-filter: saturate(1.6) contrast(1.5);
+          filter: saturate(1.6) contrast(1.5);
 }
 
 .home-equip {
@@ -948,7 +858,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   margin-left: 0;
 }
 
-.promo-cards .promo-to-right-arrow {
+.promo-cards .promo-to-right-round-button {
   width: 50px;
   height: 50px;
   background: url("/icons/arrow2.svg") no-repeat 50% 39%;
@@ -961,7 +871,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   right: 95px;
 }
 
-.promo-cards .promo-to-right-arrow:hover {
+.promo-cards .promo-to-right-round-button:hover {
   width: 50px;
   height: 50px;
   background: url("/icons/arrow2-red.svg") no-repeat 50% 50%;

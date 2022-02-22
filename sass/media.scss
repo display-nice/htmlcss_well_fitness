@@ -85,23 +85,61 @@ $lh-header: 140%;
     body {
       background-color: $lime-green;
     }
-    .frame {
-        max-width: 980px;
+    section {
+      margin-top: 80px !important;
     }
+    .frame {
+      max-width: 980px;
+    }
+    // --------------HEADER-----------------
     .header-bg-menu-2, .header-menu-1-wrapper-2 {
       display: none !important;
     }
     .header-menu-1 {
-        &-wrapper-1 {
-            width: 31%;
-        }
-        .header-menu1-icons960px {
-            width: 31%;
-            display: flex !important;
-            justify-content: space-between;
-            align-items: center;
-        }
+      &-wrapper-1 {
+          width: 31%;
+      }
+      .header-menu1-icons960px {
+          width: 31%;
+          display: flex !important;
+          justify-content: space-between;
+          align-items: center;
+      }
     }
+    // --------------BANNER 1-----------------
+    #main-banner-1 {
+      margin-top: 20px;
+      height: 320px;
+      background: #F7F7F7;
+      border-radius: 0;
+      .frame {
+        .banner-1-content {
+          background: linear-gradient(180deg, #dedfe7 0%, rgba(233, 234, 239, 0) 100%),
+          #e9eaef;
+          border-radius: 10px;
+          &-descr {
+            p:first-child {
+              font-size: 14px;
+            }
+            p:nth-child(2) {                    
+              font-size: 24px;
+            }
+            p:nth-child(3) {
+              margin-top: 24px;
+              margin-bottom: 24px;          
+              font-size: 24px;         
+            }
+          }
+          &-red-triangle {
+            width: 72.31%;
+            scale: 1.0;
+            bottom: 1px;
+          }
+        }
+        
+      }
+    }
+
   }
   
   @media (max-width: 959px) {
