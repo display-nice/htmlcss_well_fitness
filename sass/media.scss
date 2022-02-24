@@ -89,7 +89,7 @@ $lh-header: 140%;
       margin-top: 80px !important;
     }
     .frame {
-      max-width: 980px;
+      width: 940px;
     }
     // --------------HEADER-----------------
     .header-bg-menu-2, .header-menu-1-wrapper-2 {
@@ -109,7 +109,7 @@ $lh-header: 140%;
     // --------------BANNER 1-----------------
     #main-banner-1 {
       margin-top: 20px;
-      height: 320px;
+      height: auto;
       background: #F7F7F7;
       border-radius: 0;
       .frame {
@@ -118,16 +118,21 @@ $lh-header: 140%;
           #e9eaef;
           border-radius: 10px;
           &-descr {
+            margin-top: 54px;
+            margin-left: 36px;
             p:first-child {
               font-size: 14px;
             }
             p:nth-child(2) {                    
               font-size: 24px;
+              margin-top: 12.55px;
             }
-            p:nth-child(3) {
-              margin-top: 24px;
-              margin-bottom: 24px;          
-              font-size: 24px;         
+            p:nth-child(3) {                      
+              font-size: 24px;
+            }
+            button {
+              margin-top: 12.55px;
+              margin-bottom: 69px;  
             }
           }
           &-red-triangle {
@@ -136,14 +141,361 @@ $lh-header: 140%;
             bottom: 1px;
           }
         }
+        > img {
+          margin-right: 100px;
+        }
+        .banner-1-arrow-buttons {
+          right: 30px;
+        }
         
       }
     }
-
-  }
-  
-  @media (max-width: 959px) {
-    body {
-      background-color: goldenrod;
+    // --------------Акции и спецпредложения-----------------
+    .promo-menu {
+      margin-top: 80px;
+    }
+    .promo-cards {
+      &-card {
+        width: 270px;
+        height: 475px;
+        
+      }
+    }
+    .promo-to-right-round-button {      
+      top: 170px !important;
+      right: 35px !important;
+    }
+    // ----------------------Идеи и подборки----------
+    #main-ideas {
+      margin-top: 51px !important;
+      .frame {
+        padding-top: 100px !important;
+        .ideas-button {
+          margin-bottom: 62px;
+        }
+      }
+    }
+    // -----------------Популярные бренды----------
+    #main-popular-brands {
+    border-bottom: 0;
+    }
+    .pop-brands-brands-row {
+      .pop-brands-brand {
+        width: 25% !important;
+      }
+      img:nth-of-type(5) {
+        display: none !important;
+      }
+    }
+    .pop-brands-container button {
+      margin: 30px 0 0 0 !important;
+    }
+    // ---------------------Помощь покупателю---------------
+    #main-help {
+      .frame {
+        .main-help-cont {
+          flex-wrap: wrap;
+          .main-help-white-block {
+            margin: 0;
+            width: 50%;
+          }
+          .main-help-red-block {
+            margin: 0;
+            width: 50%;
+            justify-content: space-between;
+            border-radius: 0;
+            &-col1 {
+              > img {
+                padding-top: 20px !important;
+              }
+              h3 {
+                padding-top: 10px !important;
+              }
+              p {
+                font-size: 14px !important;
+              }
+              div {
+                padding: 15px 0 40px 0 !important;
+              }
+            }
+            &-col2 {
+              > img {
+                height: 72.5%;
+              }
+            }
+          }
+        }
+      }
+    }
+    // ------------О компании----------------
+    #main-about-company {
+      margin-top: 96px !important;
+      flex-wrap: wrap;
+      .russia-map {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        width: 102%;
+        margin-top: -210px;
+      }
+      .frame {
+        margin-top: 0;
+        h2 {
+          min-width: 0;
+        }
+        .about-company-descr {
+          position: relative;
+          z-index: 1;
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          min-width: 0;
+          h3 {
+            min-width: 0;
+            width: 48%;
+            font-size: 24px;
+            margin-top: 0;
+          }
+          p {
+            margin-top: 0;
+            width: 48%;            
+          }
+          button {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    // ---------------Стать партнёром------------
+    #main-partnership {
+      margin-top: 0 !important;
+    }
+    .main-partnership-cont {
+      
+      height: 327px;      
+      img {
+        width: 44% !important;
+        height: auto;        
+      }
+      .main-partnership-descr {
+        width: 45.7%;
+        margin-top: -10px;
+        height: auto;
+        align-self: flex-start;
+        p {
+          margin-top: 0;          
+          font-size: 24px !important;
+          span {
+            color: $red;
+          }
+        }
+        // button {
+        // }
+      }
+    }
+    // --------------------Подвал--------------------
+    .footer-contacts {
+      display: none !important;
+    }
+    .footer-row1 {
+      width: inherit !important;
+      margin: 0 15px;
+      .footer-nav {
+        width: inherit !important;
+        height: auto !important;
+        .footer-nav-ul {
+          margin-right: 0;
+          min-width: 0;
+        }
+        .footer-nav-ul:nth-of-type(1) {
+          margin-top: 0;
+          width: 160px;
+        }
+        .footer-nav-ul:nth-of-type(2) {
+          margin-top: 0;
+          width: 200px;
+        }
+        .footer-nav-ul:nth-of-type(3) {
+          margin-top: 0;
+          width: 137px;
+        }
+        .footer-nav-ul:nth-of-type(4) {
+          margin-top: 0;
+          width: 220px;
+        }
+      }
+    }
+    .footer-row2 {
+      width: inherit !important;
+      margin: 60px 15px 0 15px;      
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .footer-contacts-phones {        
+        margin-top: 0;
+        width: 160px;
+      }
+      .footer-contacts-email {
+        margin-top: 0;
+        width: 200px;
+      }
+      .footer-contacts-become-partner {
+        margin-top: 0;
+        width: 137px;
+        a {
+          display: block;
+          font-size: 16px;
+          line-height: 130%;
+          text-decoration: none;
+          color: $gray4;
+          margin-bottom: 8px;
+        }
+      }
+      .footer-contacts-subscribe {
+        margin-top: 0;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        button {
+          span {
+            font-size: 12px;
+          }
+          img {
+            padding-left: 0;
+          }
+        }
+        .footer-contacts-agreements {
+          display: flex;
+          flex-direction: column;
+          margin-top: 18px;
+        }
+      }      
+    }
+    .footer-row3 {
+      margin: 0 15px;
+      .footer-partnership {
+        &-block1 {
+          width: 508px;
+        }
+        &-block2 {
+          width: 170px;
+        }
+        &-block3 {
+          display: none !important;
+        }
+      }
     }
   }
+  
+@media (max-width: 959px) {
+  body {
+    background-color: goldenrod;
+  }
+  .frame {
+    width: 320px;
+  }
+  // --------------HEADER-----------------
+  .header-menu-1 {
+    height: 66px !important;
+    position: relative;
+    .header-menu-1-wrapper-1 {
+      width: 56.66% !important;
+      > img {
+        width: 100% !important;
+      }
+      > button {
+        display: none !important;
+      }
+    }
+    .header-menu1-icons960px {
+      width: 40%;      
+      .header-favorite, .header-compare  {
+        display: none !important;
+      }
+      .header-cart {
+        margin-top: 8px;
+        > img {
+          width: 75%;
+          height: auto;          
+        }
+        &::after {
+          width: 11.74px;
+          height: 11.74px;
+        }
+      }
+      .small-vertical-line-1 {
+        margin: 0;
+      }
+      .search {
+        margin-top: 5px;
+      }
+      .header-burger {
+        margin-top: 4px;
+      }
+    }
+  }
+  .header-filters {
+    height: 38px;
+    .header-filters-wrapper {
+      width: 80.6% !important;
+      .filter span {
+        font-size: 12px !important;
+        line-height: 15px !important;
+      }
+    }
+  } 
+
+  // --------------BANNER 1-----------------
+  #main-banner-1 {
+    margin-top: 20px !important;
+    .frame {
+      .banner-1-content {
+        width: 300px;
+        height: 460px;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        &-descr {
+          width: 70% !important;
+          margin-top: 29px;
+          margin-left: 20px;
+          // p:first-child {
+          //   font-size: 14px;
+          // }
+          p:nth-child(2) {
+            margin-top: 12px;
+          }
+          // p:nth-child(3) {                      
+          //   font-size: 24px;
+          // }
+          button {
+            width: 45% !important;
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+        > img {
+          width: auto !important;
+          height: 51% !important;
+          margin-right: auto;
+          margin-left: auto;
+        }        
+      }
+      .banner-1-red-triangle {
+        width: 280px !important;
+        scale: 1.0;
+        left: 23px;
+        bottom: 0px;
+      }
+      
+      .banner-1-arrow-buttons {
+        right: 15px !important;
+        bottom: 20px !important;
+      }  
+    }
+  }
+
+  // --------------Акции и спецпредложения-----------------
+}

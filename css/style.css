@@ -1,5 +1,5 @@
 .frame {
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
 }
 
@@ -485,7 +485,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 
 #main-banner-1 {
   max-width: 1800px;
-  height: 500px;
+  height: auto;
   margin-top: 39px !important;
   margin-left: auto;
   margin-right: auto;
@@ -566,28 +566,23 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   color: white;
 }
 
-#main-banner-1 .frame .banner-1-content-img-buttons {
+#main-banner-1 .frame .banner-1-content > img {
+  width: 38.1%;
+  height: auto;
+  margin-right: 200px;
+}
+
+#main-banner-1 .frame .banner-1-content .banner-1-arrow-buttons {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1;
 }
 
-#main-banner-1 .frame .banner-1-content-img-buttons > img {
-  width: 83.3%;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons {
-  width: 16.7%;
-  margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-}
-
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .banner1-to-left-round-button {
+#main-banner-1 .frame .banner-1-content .banner-1-arrow-buttons .banner1-to-left-round-button {
   width: 50px;
   height: 50px;
   background: url("/icons/arrow1.svg") no-repeat 50% 39%;
@@ -596,13 +591,13 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   border-radius: 50%;
 }
 
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .banner1-to-left-round-button:hover {
+#main-banner-1 .frame .banner-1-content .banner-1-arrow-buttons .banner1-to-left-round-button:hover {
   width: 50px;
   height: 50px;
   background: url("/icons/arrow1-red.svg") no-repeat 50% 50%;
 }
 
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .banner1-to-right-round-button {
+#main-banner-1 .frame .banner-1-content .banner-1-arrow-buttons .banner1-to-right-round-button {
   width: 50px;
   height: 50px;
   background: url("/icons/arrow2.svg") no-repeat 50% 39%;
@@ -612,7 +607,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   margin-left: 10px;
 }
 
-#main-banner-1 .frame .banner-1-content-img-buttons .banner-1-arrow-buttons .banner1-to-right-round-button:hover {
+#main-banner-1 .frame .banner-1-content .banner-1-arrow-buttons .banner1-to-right-round-button:hover {
   width: 50px;
   height: 50px;
   background: url("/icons/arrow2-red.svg") no-repeat 50% 50%;
@@ -836,6 +831,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 }
 
 .promo-cards-card > img {
+  width: 100%;
   border-radius: 6px 6px 0 0;
 }
 
@@ -1126,12 +1122,12 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 }
 
 #main-ideas .frame {
-  padding-top: 119px;
+  padding-top: 120px;
 }
 
 #main-ideas .frame h2 {
   display: block;
-  margin: 30px 15px;
+  margin: 0 15px 30px 15px;
   color: white;
 }
 
@@ -1188,6 +1184,10 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   background-color: white;
 }
 
+#main-popular-brands {
+  border-bottom: 1px solid rgba(133, 143, 164, 0.15);
+}
+
 #main-popular-brands .frame .pop-brands-container {
   margin: 0 15px;
 }
@@ -1198,6 +1198,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 }
 
 #main-popular-brands .frame .pop-brands-container .pop-brands-categories {
+  white-space: nowrap;
   margin: 30px 0;
   padding-left: 0;
 }
@@ -1435,30 +1436,41 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 }
 
 #main-about-company {
+  margin-top: 20px !important;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 #main-about-company .russia-map {
   position: absolute;
-  right: 1px;
-  bottom: -40px;
-  width: 56.8%;
+  max-width: 1070px;
   height: auto;
+  right: 0;
+}
+
+#main-about-company .frame {
+  margin-top: 100px;
+}
+
+#main-about-company .frame h2 {
+  margin-top: 0;
+  margin-left: 15px;
+  width: 572px;
 }
 
 #main-about-company .frame .about-company-descr {
   margin-left: 15px;
-  width: 39.7%;
+  width: 572px;
   height: auto;
-}
-
-#main-about-company .frame .about-company-descr h2 {
-  margin-top: 0;
 }
 
 #main-about-company .frame .about-company-descr h3 {
   font-size: 34px;
-  line-height: 48px;
+  line-height: 140%;
   font-weight: 400;
   color: #384255;
 }
@@ -1497,6 +1509,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 
 #main-partnership .frame .main-partnership-cont {
   background-color: #1a1a25;
+  border-radius: 6px;
   margin: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1522,7 +1535,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 #main-partnership .frame .main-partnership-cont .main-partnership-descr p {
   font-weight: 500;
   font-size: 36px;
-  line-height: 43px;
+  line-height: 120%;
   color: white;
 }
 
@@ -1769,7 +1782,7 @@ footer .frame .footer-row3 {
   padding: 14px;
   color: #858FA4;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 140%;
 }
 
 .footer-contacts-subscribe-button img {
@@ -1917,6 +1930,10 @@ footer .frame .footer-row3 {
   letter-spacing: 0em;
   text-align: left;
   color: #858FA4;
+}
+
+.footer-row2 {
+  display: none;
 }
 
 .in-stock {
