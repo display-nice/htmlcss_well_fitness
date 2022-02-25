@@ -1028,7 +1028,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   display: inline-block;
   margin: 0;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 140%;
   color: #1a1a25;
 }
 

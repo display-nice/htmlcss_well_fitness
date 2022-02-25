@@ -466,5 +466,51 @@
   #main-fitclub-equip .fitclub-equip-mobile-cards img:nth-of-type(n+2):nth-of-type(even) {
     margin-right: 5px;
   }
+  .promo-menu {
+    white-space: nowrap;
+  }
+  .promo-cards .promo-to-right-round-button {
+    display: none !important;
+  }
+  .promo-cards-card {
+    width: 219px;
+    height: 387px;
+  }
+  .promo-cards-card-descr .promo-stock {
+    margin: 0 !important;
+  }
+  .promo-cards-card-descr .is-in-showroom {
+    margin: 0 !important;
+  }
+  .promo-cards-card-descr .promo-good-name {
+    font-size: 14px !important;
+    margin-top: 8px;
+  }
+  .promo-cards-card-descr .rating-stars {
+    margin: 0 !important;
+    margin-top: 8px !important;
+  }
+  .promo-cards-card-descr .buy-price-wrap div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .promo-cards-card-descr .buy-price-wrap div .card-price {
+    font-size: 16px !important;
+  }
+  .promo-cards-card-descr .buy-price-wrap div .card-old-price {
+    margin-left: 10px;
+    margin-top: 2px;
+    font-size: 14px !important;
+  }
+  .promo-cards-card-descr .buy-price-wrap .buy-button {
+    display: none !important;
+  }
+  .promo-button {
+    margin-bottom: 86px;
+  }
 }
 /*# sourceMappingURL=media.css.map */

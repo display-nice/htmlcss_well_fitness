@@ -162,7 +162,6 @@ $lh-header: 140%;
       &-card {
         width: 270px;
         height: 475px;
-        
       }
     }
     .promo-to-right-round-button {      
@@ -565,5 +564,56 @@ $lh-header: 140%;
       }
     }
   }
-  
+  // ------------Акции и спецпредложения--------------
+  .promo-menu {
+    white-space: nowrap;
+  }
+  .promo-cards {
+    .promo-to-right-round-button {      
+      display: none !important;
+    }
+    &-card {
+      width: 219px;
+      height: 387px;
+      &-descr {
+        .promo-stock {
+          margin: 0 !important;
+        }
+        // .indicator-circle {
+        //   margin: 0 !important;
+        // }
+        .is-in-showroom {
+          margin: 0 !important;
+        }
+        .promo-good-name {
+          font-size: 14px !important;
+          margin-top: 8px;
+        }
+        .rating-stars {
+          margin: 0 !important;
+          margin-top: 8px !important;
+        }
+        .buy-price-wrap {
+          div {
+            display: flex;
+            justify-content: space-between;            
+            .card-price {
+              font-size: 16px !important;
+            }
+            .card-old-price {
+              margin-left: 10px;
+              margin-top: 2px;
+              font-size: 14px !important;
+            }
+          }
+          .buy-button {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+  .promo-button {
+    margin-bottom: 86px;
+  }
 }
