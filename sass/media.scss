@@ -150,6 +150,10 @@ $lh-header: 140%;
         
       }
     }
+    // ---------------Для фитнес клубов---------
+    #main-fitclub-equip {
+      border-bottom: 1px solid rgba(133, 143, 164, 0.15);
+    }
     // --------------Акции и спецпредложения-----------------
     .promo-menu {
       margin-top: 80px;
@@ -391,11 +395,16 @@ $lh-header: 140%;
   body {
     background-color: goldenrod;
   }
+  h2 {
+    font-size: 22px;
+    line-height: 110%;
+  }
   .frame {
     width: 320px;
   }
   // --------------HEADER-----------------
   .header-menu-1 {
+    margin: 0 10px !important;
     height: 66px !important;
     position: relative;
     .header-menu-1-wrapper-1 {
@@ -450,7 +459,7 @@ $lh-header: 140%;
     margin-top: 20px !important;
     .frame {
       .banner-1-content {
-        width: 300px;
+        margin: 0 10px !important;
         height: 460px;
         flex-direction: column;
         // flex-wrap: wrap;
@@ -484,9 +493,9 @@ $lh-header: 140%;
         }        
       }
       .banner-1-red-triangle {
-        width: 280px !important;
+        width: 276px !important;
         scale: 1.0;
-        left: 23px;
+        left: 21px;
         bottom: 0px;
       }
       
@@ -497,5 +506,64 @@ $lh-header: 140%;
     }
   }
 
-  // --------------Акции и спецпредложения-----------------
+  // ---------------Тренажёры для дома------------------
+  #main-home-equip {
+    h2 {
+      margin: 0 10px;
+    }
+    button {      
+      margin: 10px 10px 0 10px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    .home-equip-desktop-tab {
+      display: none !important;
+    }
+    .home-equip-mobile {
+      display: flex !important;      
+      margin: 20px 10px 0 10px;
+      img {
+        margin-bottom: 5px;
+        border-radius: 4px;
+      }
+      img:hover {
+        filter: brightness(0.8);
+      }
+      img:nth-of-type(n+2):nth-of-type(odd) {
+        margin-right: 5px;
+      }
+    }
+  }
+  // --------------Для фитнес клубов-----------
+  .fitclub-equip-desktop-tab {
+    display: none !important;
+  }
+  #main-fitclub-equip {
+    border-bottom: 0;
+    h2 {
+      margin: 0 10px;
+    }
+    button {      
+      margin: 10px 10px 0 10px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    .fitclub-equip-mobile {
+      margin: 20px 10px 0 10px;
+      display: flex !important;
+      &-cards {
+        img {
+          margin-bottom: 5px;
+          border-radius: 4px;
+        }
+        img:hover {
+          filter: brightness(0.8);
+        }
+        img:nth-of-type(n+2):nth-of-type(even) {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  
 }

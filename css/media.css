@@ -66,6 +66,9 @@
   #main-banner-1 .frame .banner-1-arrow-buttons {
     right: 30px;
   }
+  #main-fitclub-equip {
+    border-bottom: 1px solid rgba(133, 143, 164, 0.15);
+  }
   .promo-menu {
     margin-top: 80px;
   }
@@ -304,10 +307,15 @@
   body {
     background-color: goldenrod;
   }
+  h2 {
+    font-size: 22px;
+    line-height: 110%;
+  }
   .frame {
     width: 320px;
   }
   .header-menu-1 {
+    margin: 0 10px !important;
     height: 66px !important;
     position: relative;
   }
@@ -360,7 +368,7 @@
     margin-top: 20px !important;
   }
   #main-banner-1 .frame .banner-1-content {
-    width: 300px;
+    margin: 0 10px !important;
     height: 460px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -390,14 +398,73 @@
     margin-left: auto;
   }
   #main-banner-1 .frame .banner-1-red-triangle {
-    width: 280px !important;
+    width: 276px !important;
     scale: 1.0;
-    left: 23px;
+    left: 21px;
     bottom: 0px;
   }
   #main-banner-1 .frame .banner-1-arrow-buttons {
     right: 15px !important;
     bottom: 20px !important;
+  }
+  #main-home-equip h2 {
+    margin: 0 10px;
+  }
+  #main-home-equip button {
+    margin: 10px 10px 0 10px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  #main-home-equip .home-equip-desktop-tab {
+    display: none !important;
+  }
+  #main-home-equip .home-equip-mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin: 20px 10px 0 10px;
+  }
+  #main-home-equip .home-equip-mobile img {
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  #main-home-equip .home-equip-mobile img:hover {
+    -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+  }
+  #main-home-equip .home-equip-mobile img:nth-of-type(n+2):nth-of-type(odd) {
+    margin-right: 5px;
+  }
+  .fitclub-equip-desktop-tab {
+    display: none !important;
+  }
+  #main-fitclub-equip {
+    border-bottom: 0;
+  }
+  #main-fitclub-equip h2 {
+    margin: 0 10px;
+  }
+  #main-fitclub-equip button {
+    margin: 10px 10px 0 10px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  #main-fitclub-equip .fitclub-equip-mobile {
+    margin: 20px 10px 0 10px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  #main-fitclub-equip .fitclub-equip-mobile-cards img {
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  #main-fitclub-equip .fitclub-equip-mobile-cards img:hover {
+    -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+  }
+  #main-fitclub-equip .fitclub-equip-mobile-cards img:nth-of-type(n+2):nth-of-type(even) {
+    margin-right: 5px;
   }
 }
 /*# sourceMappingURL=media.css.map */
