@@ -871,7 +871,7 @@ header {
       margin: 0 15px 30px 15px;      
       color: white;         
     }
-    .ideas-img-container {
+    .ideas-img-container-desktop-tab {
       margin: 0 15px;
       display: flex;
       justify-content: space-between;
@@ -883,6 +883,9 @@ header {
         width: 23.5%;
         height: auto;
       }
+    }
+    .ideas-img-container-mobile {
+      display: none !important;
     }
     .ideas-button {
       @include common-red-button;
@@ -934,6 +937,9 @@ header {
             height: auto;
           }
         }        
+      }
+      .pop-brands-brands-row:nth-of-type(4) {
+        display: none;
       }
       button {
         @include common-red-button();

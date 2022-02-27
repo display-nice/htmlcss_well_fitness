@@ -395,8 +395,8 @@ $lh-header: 140%;
     background-color: goldenrod;
   }
   h2 {
-    font-size: 22px;
-    line-height: 110%;
+    font-size: 22px !important;
+    line-height: 110% !important;
   }
   .frame {
     width: 320px;
@@ -565,10 +565,18 @@ $lh-header: 140%;
     }
   }
   // ------------Акции и спецпредложения--------------
+  .promo {
+    margin: 0 10px;
+  }
   .promo-menu {
     white-space: nowrap;
+    h2 {
+      font-size: 22px;
+      line-height: 24px;
+    }
   }
   .promo-cards {
+    margin: 30px 10px 0 10px;
     .promo-to-right-round-button {      
       display: none !important;
     }
@@ -614,6 +622,67 @@ $lh-header: 140%;
     }
   }
   .promo-button {
-    margin-bottom: 86px;
+    margin: 30px 10px 86px 10px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  // --------------Идеи и подборки----------------
+  #main-ideas {
+    margin-top: 0 !important;
+    .frame {
+      padding-top: 80px !important;
+      h2 {
+        display: block;
+        margin: 0px 10px 30px 10px;      
+        color: white;
+      }
+      .ideas-img-container-desktop-tab {
+        display: none !important;
+      }
+      .ideas-img-container-mobile {
+        margin: 30px 10px 0px 10px;
+        display: flex !important;
+        flex-wrap: wrap;
+        > img {
+          margin-bottom: 5px;
+          border-radius: 4px;
+        }
+      }
+      .ideas-button {        
+        margin: 30px 10px 60px 10px;
+        font-size: 12px;
+        line-height: 15px;       
+      }
+    }
+  }
+  // --------------Популярные бренды----------------
+  .pop-brands-container {
+    margin: 0 10px !important;
+    .pop-brands-categories {
+      margin: 20px 0 0 0 !important;
+      li {
+        font-size: 12px !important;
+        line-height: 15px !important;
+      }
+    }
+    .pop-brands-brands {
+      margin-top: 26px;
+      .pop-brands-brands-row {
+        .pop-brands-brand {
+          width: 33.33% !important;
+        }
+        img:nth-of-type(4) {
+          display: none !important;
+        }
+      }
+      .pop-brands-brands-row:nth-of-type(4) {
+        display: flex !important;
+      }
+    }
+    button {
+      margin: 20px 0 0 0 !important;
+      font-size: 12px !important;
+      line-height: 15px !important;
+    }
   }
 }
