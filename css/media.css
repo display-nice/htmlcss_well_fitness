@@ -584,5 +584,56 @@
     font-size: 12px !important;
     line-height: 15px !important;
   }
+  #main-help h3 {
+    font-size: 16px !important;
+    line-height: 110% !important;
+  }
+  #main-help p {
+    font-size: 14px !important;
+    line-height: 140% !important;
+  }
+  #main-help a {
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+  #main-help .frame .main-help-cont {
+    margin: 0 10px !important;
+  }
+  #main-help .frame .main-help-cont .main-help-white-block:first-of-type {
+    border-radius: 6px 6px 0px 0px;
+  }
+  #main-help .frame .main-help-cont .main-help-white-block:last-of-type {
+    border-radius: 0px 0px 6px 6px;
+  }
+  #main-help .frame .main-help-cont .main-help-white-block {
+    width: 100%;
+  }
+  #main-help .frame .main-help-cont .main-help-white-block > img {
+    margin-top: 20px !important;
+  }
+  #main-help .frame .main-help-cont .main-help-white-block h3 {
+    margin: 10px 0 0 0 !important;
+  }
+  #main-help .frame .main-help-cont .main-help-white-block p {
+    margin: 8px 20px 0 20px !important;
+  }
+  #main-help .frame .main-help-cont .main-help-white-block a {
+    margin: 10px 0 20px 0 !important;
+  }
+  #main-help .frame .main-help-cont .main-help-white-block > div {
+    margin: 0 !important;
+  }
+  #main-help .frame .main-help-cont .main-help-red-block {
+    width: 100%;
+  }
+  #main-help .frame .main-help-cont .main-help-red-block .main-help-red-block-col1 {
+    margin: 0 9px 0px 20px !important;
+  }
+  #main-help .frame .main-help-cont .main-help-red-block .main-help-red-block-col1 > div {
+    padding: 10px 0 20px 0 !important;
+  }
+  #main-help .frame .main-help-cont .main-help-red-block .main-help-red-block-col2 > img {
+    height: 64.73% !important;
+  }
 }
 /*# sourceMappingURL=media.css.map */
