@@ -82,9 +82,9 @@ $lh-header: 140%;
 
 
 @media (max-width: 1409px) {
-    body {
-      background-color: $lime-green;
-    }
+    // body {
+    //   background-color: $lime-green;
+    // }
     section {
       margin-top: 80px !important;
     }
@@ -372,7 +372,13 @@ $lh-header: 140%;
           flex-direction: column;
           margin-top: 18px;
         }
-      }      
+      }
+      .footer-social-mobile {
+        display: none;
+      }
+      .footer-privacy-policy {
+        display: none;
+      }
     }
     .footer-row3 {
       margin: 0 15px;
@@ -390,10 +396,10 @@ $lh-header: 140%;
     }
   }
   
-@media (max-width: 959px) {
-  body {
-    background-color: goldenrod;
-  }
+@media (max-width: 959px) {  
+  // body {
+  //   background-color: goldenrod;
+  // }
   h2 {
     font-size: 22px !important;
     line-height: 110% !important;
@@ -743,5 +749,235 @@ $lh-header: 140%;
       }
     }
   }
-  
+  // --------------О компании-------------------------
+  #main-about-company {
+    margin-top: 88px !important;
+    .frame {
+      h2 {
+        margin: 0 10px;
+      }
+      .about-company-descr {
+        margin: 0 10px;
+        display: flex;
+        h3 {
+          margin: 20px 0 0 0;
+          width: 100% !important;
+          font-size: 18px !important;
+          line-height: 140% !important;
+        }
+        p {
+          margin: 20px 0 0 0;
+          width: 100% !important;
+          font-size: 14px !important;
+          line-height: 140% !important;
+        }
+        button {
+          margin: 20px 0 0 0;
+          font-size: 12px !important;
+          line-height: 15px !important;
+        }
+      }
+    }
+    .russia-map {
+      margin-top: -30px;
+    }
+  }
+  // --------------Партнёрство (стать партнёром)--------
+  #main-partnership {
+    margin: 20px 0 0 0 !important;
+    .frame {
+      .main-partnership-cont {
+        height: auto !important;
+        margin: 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        > img {
+          order: 1;
+          width: 100% !important;
+        }
+        .main-partnership-descr {
+          margin: 64px 41px 0 28px;
+          order: 0;
+          width: 100% !important;
+          p {
+            font-size: 18px !important;
+            line-height: 120% !important;
+          }
+          button {
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+  // -------------Новости, блог--------------
+  #main-news-and-blog {
+    .frame {
+      h2 {
+        margin: 0 10px !important;
+      }
+      > h3 {
+        margin: 0 10px !important;
+        top: auto;
+        font-size: 22px !important;
+        line-height: 110% !important;
+      }
+      .main-news {
+        margin: 20px 10px 0 10px !important;
+        .main-news-card {
+          > img {
+            width: 250px;
+            height: 260px;
+          }
+          > h3 {
+            margin: 10px 0 0 0 !important;
+            font-size: 16px !important;
+            line-height: 110% !important;
+          }
+          .main-news-card-descr {
+            margin: 10px 0 0 0 !important;
+            font-size: 14px !important;
+            line-height: 140% !important;
+          }
+          .main-news-card-date {
+            margin: 10px 0 0 0 !important;
+          }
+        }
+        .main-news-to-right-button {
+          display: none !important;
+        }
+      }
+      button {
+        margin-left: 10px;
+        font-size: 14px !important;
+        line-height: 17px !important;
+      }
+    }
+  }
+  // ---------------------Подвал------------------
+  #footer {
+    .frame {
+      .footer-row1 {
+        width: auto !important;
+        margin: 0 10px !important;
+        .footer-nav {
+          margin-top: 0px;
+          flex-wrap: wrap;
+          .footer-nav-ul {
+            width: 50%;
+            .footer-nav-li-head {
+              margin-top: 27px !important;
+              a {
+                font-size: 16px !important;
+                line-height: 130% !important;
+                margin-bottom: 16px !important;
+              }
+            }
+            .footer-nav-li {
+              a {
+                font-size: 14px !important;
+                line-height: 140% !important;
+                margin-bottom: 8px !important;
+              }
+            }
+          }
+        }
+      }
+      .footer-row2 {
+        flex-wrap: wrap;
+        margin: 30px 10px 0 10px !important;
+        .footer-contacts-become-partner {
+          order: -1;
+          width: 100% !important;
+          a {
+            font-size: 14px !important;
+            line-height: 140% !important;
+          }
+        }
+        .footer-contacts-subscribe {
+          margin-top: 30px;
+          order: 0;
+          width: 100% !important;
+          .footer-contacts-subscribe-button {
+            
+            width: 300px;
+          }
+          .footer-subscribe-success {
+            font-size: 12px;
+            line-height: 15px;
+          }
+          .footer-contacts-agreements {
+            display: none;            
+          }          
+        }
+        .footer-contacts-phones {
+          margin-top: 10px !important;
+          order: 1;
+          width: 100% !important;
+          display: flex;
+          flex-wrap: wrap;          
+          a {
+            font-size: 12px !important;
+            line-height: 15px !important;
+          }
+        }
+        .footer-contacts-email {
+          order: 2;
+          width: 100% !important;
+          span {
+            font-size: 14px;
+            line-height: 140%;
+            margin: 30px 0 0 0 !important;
+          }
+          a {
+            margin-top: 12px;
+            font-size: 12px !important;
+            line-height: 15px !important;
+          }
+        }
+        .footer-privacy-policy {
+          margin-top: 30px;
+          display: flex !important;
+          order: 3;
+          width: 100%;
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 20px;
+            color: $blue;
+          }
+        }
+        .footer-social-mobile {
+          margin-top: 30px;
+          display: flex !important;
+          order: 4;
+          width: 132px;
+          justify-content: space-between;
+        }
+      }
+      .footer-row3 {
+        flex-wrap: wrap;
+        .footer-partnership {
+          width: 300px;
+          margin-top: 89px;
+          display: flex;
+          flex-wrap: wrap;
+          .footer-partnership-block1 {
+            width: 60% !important;
+          }
+          .footer-partnership-block2 {
+            display: none !important;
+          }
+          .footer-partnership-block3 {
+          }
+          .footer-partnership-block4 {
+            margin-top: 19px;
+          }
+        }
+      }
+      .main-copyright {
+      }
+    }
+  }
 }
