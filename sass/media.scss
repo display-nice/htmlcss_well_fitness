@@ -134,18 +134,14 @@ $lh-header: 140%;
               margin-top: 12.55px;
               margin-bottom: 69px;  
             }
-          }
-          &-red-triangle {
-            width: 72.31%;
-            scale: 1.0;
-            bottom: 1px;
-          }
+          }          
         }
-        > img {
-          margin-right: 100px;
-        }
+        .banner-1-red-triangle {
+          left: 15px;
+          width: 72.31%;
+        }        
         .banner-1-arrow-buttons {
-          right: 30px;
+          right: 30px !important;
         }
         
       }
@@ -166,7 +162,7 @@ $lh-header: 140%;
     }
     .promo-to-right-round-button {      
       top: 170px !important;
-      right: 35px !important;
+      right: 15px !important;
     }
     // ----------------------Идеи и подборки----------
     #main-ideas {
@@ -201,6 +197,18 @@ $lh-header: 140%;
           .main-help-white-block {
             margin: 0;
             width: 50%;
+            > img {
+              margin: 30px 0 0 0 !important;
+            }
+            h3 {
+              margin: 20px 0 0 0 !important;
+            }
+            p {
+              margin: 20px 0 0 0 !important;
+            }
+            > div {
+              margin: 20px 0 40px 0 !important;
+            }
           }
           .main-help-red-block {
             margin: 0;
@@ -208,20 +216,27 @@ $lh-header: 140%;
             justify-content: space-between;
             border-radius: 0;
             &-col1 {
+              width: 55% !important;
               > img {
-                padding-top: 20px !important;
+                margin: 20px 0 0 0 !important;
+                padding: 0px !important;
               }
               h3 {
-                padding-top: 10px !important;
+                margin: 10px 0 0 0 !important;
+                padding: 0px !important;
               }
               p {
+                margin: 10px 0 0 0 !important;
+                padding: 0px !important;
                 font-size: 14px !important;
               }
               div {
-                padding: 15px 0 40px 0 !important;
+                margin: 10px 0 34px 0 !important;
+                padding: 0px !important;                
               }
             }
             &-col2 {
+              width: 35% !important;
               > img {
                 height: 72.5%;
               }
@@ -295,6 +310,10 @@ $lh-header: 140%;
         // button {
         // }
       }
+    }
+    // ---------------Новости, блог--------------
+    .main-news-to-right-button {
+      display: none !important;
     }
     // --------------------Подвал--------------------
     .footer-contacts {
@@ -844,9 +863,7 @@ $lh-header: 140%;
             margin: 10px 0 0 0 !important;
           }
         }
-        .main-news-to-right-button {
-          display: none !important;
-        }
+        
       }
       button {
         margin-left: 10px;

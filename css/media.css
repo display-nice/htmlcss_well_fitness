@@ -52,16 +52,12 @@
     margin-top: 12.55px;
     margin-bottom: 69px;
   }
-  #main-banner-1 .frame .banner-1-content-red-triangle {
+  #main-banner-1 .frame .banner-1-red-triangle {
+    left: 15px;
     width: 72.31%;
-    scale: 1.0;
-    bottom: 1px;
-  }
-  #main-banner-1 .frame > img {
-    margin-right: 100px;
   }
   #main-banner-1 .frame .banner-1-arrow-buttons {
-    right: 30px;
+    right: 30px !important;
   }
   #main-fitclub-equip {
     border-bottom: 1px solid rgba(133, 143, 164, 0.15);
@@ -75,7 +71,7 @@
   }
   .promo-to-right-round-button {
     top: 170px !important;
-    right: 35px !important;
+    right: 15px !important;
   }
   #main-ideas {
     margin-top: 51px !important;
@@ -106,6 +102,18 @@
     margin: 0;
     width: 50%;
   }
+  #main-help .frame .main-help-cont .main-help-white-block > img {
+    margin: 30px 0 0 0 !important;
+  }
+  #main-help .frame .main-help-cont .main-help-white-block h3 {
+    margin: 20px 0 0 0 !important;
+  }
+  #main-help .frame .main-help-cont .main-help-white-block p {
+    margin: 20px 0 0 0 !important;
+  }
+  #main-help .frame .main-help-cont .main-help-white-block > div {
+    margin: 20px 0 40px 0 !important;
+  }
   #main-help .frame .main-help-cont .main-help-red-block {
     margin: 0;
     width: 50%;
@@ -114,17 +122,28 @@
             justify-content: space-between;
     border-radius: 0;
   }
+  #main-help .frame .main-help-cont .main-help-red-block-col1 {
+    width: 55% !important;
+  }
   #main-help .frame .main-help-cont .main-help-red-block-col1 > img {
-    padding-top: 20px !important;
+    margin: 20px 0 0 0 !important;
+    padding: 0px !important;
   }
   #main-help .frame .main-help-cont .main-help-red-block-col1 h3 {
-    padding-top: 10px !important;
+    margin: 10px 0 0 0 !important;
+    padding: 0px !important;
   }
   #main-help .frame .main-help-cont .main-help-red-block-col1 p {
+    margin: 10px 0 0 0 !important;
+    padding: 0px !important;
     font-size: 14px !important;
   }
   #main-help .frame .main-help-cont .main-help-red-block-col1 div {
-    padding: 15px 0 40px 0 !important;
+    margin: 10px 0 34px 0 !important;
+    padding: 0px !important;
+  }
+  #main-help .frame .main-help-cont .main-help-red-block-col2 {
+    width: 35% !important;
   }
   #main-help .frame .main-help-cont .main-help-red-block-col2 > img {
     height: 72.5%;
@@ -194,6 +213,9 @@
   }
   .main-partnership-cont .main-partnership-descr p span {
     color: #f53b49;
+  }
+  .main-news-to-right-button {
+    display: none !important;
   }
   .footer-contacts {
     display: none !important;
@@ -728,9 +750,6 @@
   }
   #main-news-and-blog .frame .main-news .main-news-card .main-news-card-date {
     margin: 10px 0 0 0 !important;
-  }
-  #main-news-and-blog .frame .main-news .main-news-to-right-button {
-    display: none !important;
   }
   #main-news-and-blog .frame button {
     margin-left: 10px;
