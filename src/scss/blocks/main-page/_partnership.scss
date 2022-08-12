@@ -1,0 +1,102 @@
+// ---------------------------Партнёрство (стать партнёром)----------------------
+// ------------------------------------------------------------------------------
+#main-partnership {
+	.frame {
+	  .main-partnership-cont {
+		 background-color: $dgray;
+		 border-radius: 6px;
+		 margin: 0 15px;
+		 display: flex;
+		 justify-content: space-evenly;
+		 img {
+			width: 34.32%;
+			height: auto;
+		 }
+		 .main-partnership-descr {
+			width: 40.56%;
+			height: auto;
+			align-self: center;
+			p {
+			  font-weight: 500;
+			  font-size: 36px;
+			  line-height: 120%;
+			  color: white;
+			  span {
+				 color: $red;
+			  }
+			}
+			button {          
+			  @include common-red-button();
+			  color: white;
+			  border-color: rgba(255, 255, 255, 0.7);
+			  &:hover {
+				 color: $dgray;
+				 background-color: #fff;
+			  }
+			}
+		 }
+	  }
+	}
+}
+
+@media (max-width: 1409px) {
+	// ---------------Стать партнёром------------
+	#main-partnership {
+      margin-top: 0 !important;
+    }
+    .main-partnership-cont {
+      
+      height: 327px;      
+      img {
+        width: 44% !important;
+        height: auto;        
+      }
+      .main-partnership-descr {
+        width: 45.7%;
+        margin-top: -10px;
+        height: auto;
+        align-self: flex-start;
+        p {
+          margin-top: 0;          
+          font-size: 24px !important;
+          span {
+            color: $red;
+          }
+        }
+        // button {
+        // }
+      }
+	}
+}
+
+@media (max-width: 959px) {
+	  // --------------Партнёрство (стать партнёром)--------
+	  #main-partnership {
+		margin: 20px 0 0 0 !important;
+		.frame {
+		  .main-partnership-cont {
+			 height: auto !important;
+			 margin: 0 10px;
+			 display: flex;
+			 flex-wrap: wrap;
+			 > img {
+				order: 1;
+				width: 100% !important;
+			 }
+			 .main-partnership-descr {
+				margin: 64px 41px 0 28px;
+				order: 0;
+				width: 100% !important;
+				p {
+				  font-size: 18px !important;
+				  line-height: 120% !important;
+				}
+				button {
+				  font-size: 12px;
+				  line-height: 15px;
+				}
+			 }
+		  }
+		}
+	}
+}

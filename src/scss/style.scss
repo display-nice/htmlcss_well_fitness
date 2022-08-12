@@ -1,0 +1,51 @@
+// общее
+@import './common/variables'; // переменные, миксины для стилей
+@import './common/body'; // стили для body
+
+// header
+@import './blocks/header';
+
+// главная страница
+@import './blocks/main-page/banner-1';
+@import './blocks/main-page/home-equip';
+@import './blocks/main-page/fitclub-equip';
+@import './blocks/main-page/promo';
+@import './blocks/main-page/ideas';
+@import './blocks/main-page/popular-brands';
+@import './blocks/main-page/help';
+@import './blocks/main-page/about-company';
+@import './blocks/main-page/partnership';
+@import './blocks/main-page/news-and-blog';
+
+// footer
+@import './blocks/footer';
+
+// ------------------------------------------------------------------------------
+// ---------------------------Технические индикаторы-----------------------------
+// ------------------------------------------------------------------------------
+.in-stock {
+  color: $lime-green;
+}
+.limited-stock {
+  color: #F99808;
+}
+.out-of-stock {
+  color: $red;
+}
+.green-filled {
+  border: 0.5px solid $lime-green;
+  background-color: $lime-green;
+}
+.green-empty {
+  border: 0.5px solid $lime-green;  
+}
+.orange-filled {
+  border: 0.5px solid #F99808;
+  background-color: #F99808;
+}
+.orange-empty {
+  border: 0.5px solid #F99808;  
+}
+.red-empty {
+  border: 0.5px solid $red;  
+}

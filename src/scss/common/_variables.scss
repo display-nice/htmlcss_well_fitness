@@ -1,0 +1,102 @@
+$dgray: #1a1a25;
+$lgray: #909cb5;
+$txt: #384255;
+$gray4: #858FA4;
+$white: white;
+$black-rock: #2a2c38;
+$graybutton: rgba(133, 143, 164, 0.15);
+$red: #f53b49;
+$hover-red: #E32A38;
+$lime-green: #2FC509;
+$blue: #4B7EE8;
+$fs-header: 14px;
+$lh-header: 140%;
+
+@mixin small-vertical-line {
+  width: 1px;
+  height: 30px;
+  border-radius: 1px;
+  background-color: #858fa4;
+  opacity: 0.15;
+  align-self: center;
+  margin: 0 6px;
+}
+@mixin common-red-button {
+  box-sizing: border-box;
+  appearance: none;
+  border: 1px solid $red;
+  background-color: transparent;
+  border-radius: 4px;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: $red;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  &:hover {
+    background-color: $red;
+    color: white;
+  }
+}
+@mixin white-bg-round-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+@mixin arrow {
+  span,
+  span::before,
+  span::after {
+    display: block;
+    border-radius: 5px;
+    height: 3px;
+  }
+  span {
+    width: 16px;
+    background-color: $red;
+  }
+  span::before {
+    content: "";
+    width: 55%;
+    transform: translate(0px, 3px) rotate(45deg);
+    background-color: inherit;
+  }
+  span::after {
+    content: "";
+    width: 55%;
+    transform: translate(0px, -6.1px) rotate(-45deg);
+    background-color: inherit;
+  }
+}
+@mixin to-right-round-button {  
+  width: 50px;
+  height: 50px;
+  background: url("/icons/arrow2.svg") no-repeat 50% 39%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;  
+  &:hover {
+    width: 50px;
+    height: 50px;
+    background: url("/icons/arrow2-red.svg") no-repeat 50% 50%;
+  }  
+}
+@mixin to-left-round-button {  
+  width: 50px;
+  height: 50px;
+  background: url("/icons/arrow1.svg") no-repeat 50% 39%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  &:hover {
+    width: 50px;
+    height: 50px;
+    background: url("/icons/arrow1-red.svg") no-repeat 50% 50%;
+  }  
+}

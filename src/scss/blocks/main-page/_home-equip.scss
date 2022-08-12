@@ -1,0 +1,90 @@
+// ---------------------------Тренажёры для дома------------------------------
+.home-equip-mobile {
+	display: none;
+}
+ 
+#main-home-equip {
+	h2 {
+	  margin: 0 15px;
+	}
+	button {
+	  @include common-red-button();
+	  margin-top: 30px;
+	  margin-left: 15px;
+	}
+}
+.home-equip-desktop-tab {
+	margin: 30px 15px 0 15px;
+	.home-equip-cards {
+	  img {
+		 border-radius: 4px;
+	  }
+	  img:hover {
+		 filter: brightness(0.8);
+	  }
+	  &-wrapper1 {
+		 display: flex;           
+		 justify-content: space-between;         
+		 > img {
+			width: 23.5%;
+			height: auto;        
+		 }      
+		 div {
+			width: 23.5%;
+			height: auto;
+			max-height: 430px;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-between;
+			img {
+			  width: 100%;
+			  height: auto;
+			}
+		 }
+	  }
+	  &-wrapper2 {      
+		 margin-top: 25px;      
+		 display: flex;      
+		 justify-content: space-between;  
+		 img {        
+			width: 23.5%;
+			height: auto;
+		 }    
+	  }    
+	}  
+}
+
+@media (max-width: 1409px) {
+
+}
+
+@media (max-width: 959px) {
+	// ---------------Тренажёры для дома------------------
+	#main-home-equip {
+		h2 {
+		  margin: 0 10px;
+		}
+		button {      
+		  margin: 10px 10px 0 10px;
+		  font-size: 12px;
+		  line-height: 15px;
+		}
+		.home-equip-desktop-tab {
+		  display: none !important;
+		}
+		.home-equip-mobile {
+		  display: flex !important;      
+		  margin: 20px 10px 0 10px;
+		  img {
+			 margin-bottom: 5px;
+			 border-radius: 4px;
+		  }
+		  img:hover {
+			 filter: brightness(0.8);
+		  }
+		  img:nth-of-type(n+2):nth-of-type(odd) {
+			 margin-right: 5px;
+		  }
+		}
+	}
+}

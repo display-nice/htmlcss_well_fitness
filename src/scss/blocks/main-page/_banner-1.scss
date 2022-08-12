@@ -1,0 +1,194 @@
+// ---------------------------BANNER 1----------------------
+#main-banner-1 {
+	max-width: 1800px;
+	height: auto;
+	margin-top: 39px !important;
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(180deg, #dedfe7 0%, rgba(233, 234, 239, 0) 100%),
+	  #e9eaef;
+	border-radius: 10px;
+	.frame {
+	  position: relative;
+	  .banner-1-content {
+		 position: relative;
+		 margin: 0 15px;
+		 display: flex;
+		 justify-content: space-between;
+		 &-descr {
+			width: 30%;
+			margin-top: 83px;
+			p:first-child {          
+			  margin: 0;
+			  color: $red;
+			  font-size: 24px;          
+			  font-weight: 900;
+			  line-height: 110%;          
+			}
+			p:nth-child(2) {
+			  margin: 0;
+			  margin-top: 24px;      
+			  font-size: 50px;          
+			  font-weight: 900;
+			  line-height: 110%;          
+			}
+			p:nth-child(3) {
+			  margin: 0;          
+			  font-size: 50px;          
+			  font-weight: 400;
+			  line-height: 110%;          
+			}
+			button {
+			  @include common-red-button;
+			  margin-top: 24px;
+			  margin-bottom: 24px;  
+			  position: absolute;
+			  z-index: 1;
+			}
+		 }
+		 > img {
+			width: 38.1%;
+			height: auto;
+			margin-right: 200px;
+		 }
+		 .banner-1-arrow-buttons {
+			position: absolute;        
+			bottom: 30px;
+			right: 0;
+			display: flex;
+			z-index: 1;
+			.banner1-to-left-round-button {
+			  @include to-left-round-button();
+			}
+			.banner1-to-right-round-button {
+			  @include to-right-round-button();
+			  margin-left: 10px;
+			}
+		 }
+		 // &-img-buttons {
+		 //   display: flex;
+		 //   > img {
+		 //     width: 83.3%;
+		 //   }
+		 //   .banner-1-arrow-buttons {
+		 //     width: 16.7%;
+		 //     margin-bottom: 30px;
+		 //     display: flex;
+		 //     align-items: end;          
+		 //     .banner1-to-left-round-button {
+		 //       @include to-left-round-button();
+		 //     }
+		 //     .banner1-to-right-round-button {
+		 //       @include to-right-round-button();
+		 //       margin-left: 10px;
+		 //     }
+		 //   }
+		 // }
+	  }
+	  .banner-1-red-triangle {      
+		 position: absolute;
+		 width: 77%;
+		 height: auto;
+		 bottom: 0%;
+		 opacity: 0.75;
+		 filter: saturate(1.6) contrast(1.5);
+	  }
+	}
+}
+
+@media (max-width: 1409px) {
+	// --------------BANNER 1 -----------------
+	#main-banner-1 {
+		margin-top: 20px;
+		height: auto;
+		background: #F7F7F7;
+		border-radius: 0;
+		.frame {
+			.banner-1-content {
+				background: linear-gradient(180deg, #dedfe7 0%, rgba(233, 234, 239, 0) 100%),
+				#e9eaef;
+				border-radius: 10px;
+				&-descr {
+				margin-top: 54px;
+				margin-left: 36px;
+				p:first-child {
+					font-size: 14px;
+				}
+				p:nth-child(2) {                    
+					font-size: 24px;
+					margin-top: 12.55px;
+				}
+				p:nth-child(3) {                      
+					font-size: 24px;
+				}
+				button {
+					margin-top: 12.55px;
+					margin-bottom: 69px;  
+				}
+				}          
+			}
+			.banner-1-red-triangle {
+				left: 15px;
+				width: 72.31%;
+			}        
+			.banner-1-arrow-buttons {
+				right: 30px !important;
+			}
+			
+		}
+	}
+}
+
+@media (max-width: 959px) {
+	 // --------------BANNER 1-----------------
+	#main-banner-1 {
+		margin-top: 20px !important;
+		.frame {
+		  .banner-1-content {
+			 margin: 0 10px !important;
+			 height: 460px;
+			 flex-direction: column;
+			 // flex-wrap: wrap;
+			 &-descr {
+				width: 70% !important;
+				margin-top: 29px;
+				margin-left: 20px;
+				// p:first-child {
+				//   font-size: 14px;
+				// }
+				p:nth-child(2) {
+				  margin-top: 12px;
+				}
+				// p:nth-child(3) {                      
+				//   font-size: 24px;
+				// }
+				button {
+				  width: 45% !important;
+				  margin-top: 12px;
+				  font-size: 12px;
+				  line-height: 15px;
+				  padding-left: 10px;
+				  padding-right: 10px;
+				}
+			 }
+			 > img {
+				width: auto !important;
+				height: 51% !important;
+				margin-right: auto;
+				margin-left: auto;
+			 }        
+		  }
+		  .banner-1-red-triangle {
+			 width: 276px !important;
+			 scale: 1.0;
+			 left: 21px;
+			 bottom: 0px;
+		  }
+		  
+		  .banner-1-arrow-buttons {
+			 right: 15px !important;
+			 bottom: 20px !important;
+		  }  
+		}
+	}
+}
