@@ -2110,6 +2110,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   color: #828282;
 }
 #main-news-and-blog .frame .main-news {
+  overflow: hidden;
   margin-left: 15px;
   display: -webkit-box;
   display: -ms-flexbox;

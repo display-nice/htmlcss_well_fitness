@@ -616,7 +616,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 #main-banner-1 .frame .banner-1-content .banner-1-arrow-buttons .banner1-to-left-round-button {
   width: 50px;
   height: 50px;
-  background: url("/icons/arrow1.svg") no-repeat 50% 39%;
+  background: url("/src/icons/arrow1.svg") no-repeat 50% 39%;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -624,12 +624,12 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 #main-banner-1 .frame .banner-1-content .banner-1-arrow-buttons .banner1-to-left-round-button:hover {
   width: 50px;
   height: 50px;
-  background: url("/icons/arrow1-red.svg") no-repeat 50% 50%;
+  background: url("/src/icons/arrow1-red.svg") no-repeat 50% 50%;
 }
 #main-banner-1 .frame .banner-1-content .banner-1-arrow-buttons .banner1-to-right-round-button {
   width: 50px;
   height: 50px;
-  background: url("/icons/arrow2.svg") no-repeat 50% 39%;
+  background: url("/src/icons/arrow2.svg") no-repeat 50% 39%;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -638,7 +638,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 #main-banner-1 .frame .banner-1-content .banner-1-arrow-buttons .banner1-to-right-round-button:hover {
   width: 50px;
   height: 50px;
-  background: url("/icons/arrow2-red.svg") no-repeat 50% 50%;
+  background: url("/src/icons/arrow2-red.svg") no-repeat 50% 50%;
 }
 #main-banner-1 .frame .banner-1-red-triangle {
   position: absolute;
@@ -986,6 +986,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   position: relative;
+  overflow: hidden;
 }
 .promo-cards-card {
   background-color: #fff;
@@ -1030,7 +1031,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 .promo-cards .promo-to-right-round-button {
   width: 50px;
   height: 50px;
-  background: url("/icons/arrow2.svg") no-repeat 50% 39%;
+  background: url("/src/icons/arrow2.svg") no-repeat 50% 39%;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -1042,7 +1043,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
 .promo-cards .promo-to-right-round-button:hover {
   width: 50px;
   height: 50px;
-  background: url("/icons/arrow2-red.svg") no-repeat 50% 50%;
+  background: url("/src/icons/arrow2-red.svg") no-repeat 50% 50%;
 }
 
 .promo-cards-card-icons-left {
@@ -1460,6 +1461,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   font-size: 30px;
 }
 #main-popular-brands .frame .pop-brands-container .pop-brands-categories {
+  overflow: scroll;
   white-space: nowrap;
   margin: 30px 0;
   padding-left: 0;
@@ -2110,6 +2112,7 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   color: #828282;
 }
 #main-news-and-blog .frame .main-news {
+  overflow: hidden;
   margin-left: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2142,7 +2145,8 @@ header .header-bg-menu-3 .frame .header-menu-3 .header-filters-wrapper .small-ve
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
 }
-#main-news-and-blog .frame .main-news-card:hover h3, #main-news-and-blog .frame .main-news-card:hover p:nth-of-type(1) {
+#main-news-and-blog .frame .main-news-card:hover h3,
+#main-news-and-blog .frame .main-news-card:hover p:nth-of-type(1) {
   color: #f53b49;
 }
 #main-news-and-blog .frame .main-news span {

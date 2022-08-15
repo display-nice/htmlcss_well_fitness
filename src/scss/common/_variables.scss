@@ -79,24 +79,24 @@ $lh-header: 140%;
 @mixin to-right-round-button {  
   width: 50px;
   height: 50px;
-  background: url("/icons/arrow2.svg") no-repeat 50% 39%;
+  background: url("/src/icons/arrow2.svg") no-repeat 50% 39%;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
   border-radius: 50%;  
   &:hover {
     width: 50px;
     height: 50px;
-    background: url("/icons/arrow2-red.svg") no-repeat 50% 50%;
+    background: url("/src/icons/arrow2-red.svg") no-repeat 50% 50%;
   }  
 }
 @mixin to-left-round-button {  
   width: 50px;
   height: 50px;
-  background: url("/icons/arrow1.svg") no-repeat 50% 39%;
+  background: url("/src/icons/arrow1.svg") no-repeat 50% 39%;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.07), 0px 0px 25px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   &:hover {
     width: 50px;
     height: 50px;
-    background: url("/icons/arrow1-red.svg") no-repeat 50% 50%;
+    background: url("/src/icons/arrow1-red.svg") no-repeat 50% 50%;
   }  
 }
